@@ -7791,6 +7791,10 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 0.125rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -7863,6 +7867,22 @@ details.collapse summary::-webkit-details-marker {
   height: 100%;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
 .max-h-\[520px\] {
   max-height: 520px;
 }
@@ -7885,6 +7905,22 @@ details.collapse summary::-webkit-details-marker {
 
 .w-full {
   width: 100%;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .min-w-\[280px\] {
@@ -8007,6 +8043,10 @@ details.collapse summary::-webkit-details-marker {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -8364,6 +8404,10 @@ details.collapse summary::-webkit-details-marker {
   background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
 }
 
+.bg-base-300\/10 {
+  background-color: var(--fallback-b3,oklch(var(--b3)/0.1));
+}
+
 .bg-none {
   background-image: none;
 }
@@ -8536,6 +8580,10 @@ details.collapse summary::-webkit-details-marker {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .text-left {
@@ -8751,6 +8799,15 @@ details.collapse summary::-webkit-details-marker {
   color: var(--fallback-pc,oklch(var(--pc)/0.8));
 }
 
+.text-primary-content\/70 {
+  color: var(--fallback-pc,oklch(var(--pc)/0.7));
+}
+
+.text-base-300 {
+  --tw-text-opacity: 1;
+  color: var(--fallback-b3,oklch(var(--b3)/var(--tw-text-opacity)));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -8770,6 +8827,10 @@ details.collapse summary::-webkit-details-marker {
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.opacity-70 {
+  opacity: 0.7;
 }
 
 .mix-blend-plus-lighter {
@@ -8999,6 +9060,14 @@ details.collapse summary::-webkit-details-marker {
   background-color: var(--fallback-in,oklch(var(--in)/0.2));
 }
 
+.hover\:bg-base-300\/10:hover {
+  background-color: var(--fallback-b3,oklch(var(--b3)/0.1));
+}
+
+.hover\:bg-base-300\/20:hover {
+  background-color: var(--fallback-b3,oklch(var(--b3)/0.2));
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -9074,6 +9143,11 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
