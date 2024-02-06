@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-pages
+---
+<div class="max-w-screen-xl mt-12 mx-auto">
+  <div class="relative isolate overflow-hidden sm:mx-auto sm:max-w-2xl sm:rounded-3xl lg:mx-0 lg:max-w-none">
+    <div class="mx-auto max-w-2xl mb-24 sm:mx-0 sm:max-w-none">
+        <div class="text-[46px] font-extrabold text-center text-neutral-content">{{ title }}</div>
+        <div class="text-[24px] mt-4 text-center text-neutral-content">{{ description }}</div>
+    </div>
+  </div>
+
+<main class=" mx-4 mt-12 2xl:max-w-screen-xl lg:mx-auto">
+    {{ content | safe }}
+</main>
+</div>

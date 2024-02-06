@@ -1,0 +1,35 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+{% set maxPosts = collections.posts.length  %}
+<div class="max-w-screen-lg mb-12 mx-4 2xl:max-w-screen-xl lg:mx-auto">
+
+{# <span class="block mt-16 bg-center bg-no-repeat bg-contain mb-4" style="width: 70px; height: 80px; background-image: url(/img/bonfire.png);"></span> #}
+<h1 class="mt-20 mb-8 text-center text-3xl font-extrabold sm:text-4xl">
+  Blog
+</h1>
+
+{% set postslist = collections.posts  %}
+{% set postslistCounter = collections.posts | length %}
+{% set firstPost = postslist | reverse | first %}
+
+<!-- Return all tags -->
+<section class="flex items-center my-16 place-content-center gap-4">
+  {% for tag in collections.tagList %}
+    {% if tag != "posts" %}
+    {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+    <a href="{{ tagUrl | url }}">
+    <span class="badge hover:bg-info/20 badge-info badge-outline badge-lg h-[3rem] border-info !border-opacity-40 text-info">
+    {{ tag }}
+    </span>
+    </a>
+    {% endif %}
+  {% endfor %}
+</section>
+
+{% include "postslist.njk" %}
+
+</div>

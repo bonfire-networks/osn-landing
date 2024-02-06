@@ -1,0 +1,57 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+
+
+<div class="max-w-screen-md px-6 mx-auto mt-0 mb-12 lg:px-0">
+  <div class="py-8 pb-8 mx-auto">
+    <div class="">
+       
+     <div class="items-center justify-center mb-6 place-content-center flex gap-4">
+      {%- for tag in tags | filterTagList -%}
+      {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+        <a href="{{ tagUrl | url }}">
+        <span class="badge capitalize badge-lg badge-outline">
+          {{ tag }}
+        </span>
+        </a>
+      {%- endfor %}
+      </div>
+      <h1 style="line-height: 50px;" class="z-10 col-span-2 text-4xl font-bold text-center">{{title}}</h1>
+     {# <div class="mt-4 mb-8 text-base text-center text-base-content/80">
+        <span>Published {{ date | readableDate }}</span>
+      </div> #}
+     
+
+      {% if header_html %}
+        {{ header_html | safe }}
+      {% else %}
+        <img src="{{image}}" alt="post image" class="w-full max-h-[520px] mt-6 rounded-box object-fit object-cover" />
+      {% endif %}
+        
+    </div>
+  </div>
+
+  <article class="max-w-screen-md mx-auto mt-12 prose prose-xl">
+    {{ content | safe }}
+  </article>
+
+
+    
+</div>
+
+  <div class="mx-4 mt-8 lg:mx-auto">
+    {% include "newsletter.njk" %}
+    </div>
+
+  
+{# {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+{%- if nextPost or previousPost %}
+<hr>
+<ul>
+  {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
+  {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
+</ul>
+{%- endif %} #}
