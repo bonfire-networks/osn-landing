@@ -5,16 +5,39 @@ eleventyNavigation:
   order: 1
 ---
 <div  class="max-w-screen-xl m-4 mt-0 pt-6 border-t-dotted mx-auto border border-base-300">
-  <div style="background-image:url(/img/bg.png)" class="rounded-xl bg-cover bg-norepeat bg-center text-primary-content m-6 mt-0 p-24 bg-primary">
+  <div style="background-image:url(/img/bg.png)" class="rounded-xl grid grid-cols-6 gap-10 bg-cover bg-norepeat bg-center text-primary-content m-6 mt-0 pl-16 p-24 pr-12 bg-primary">
     {# <div class="max-w-screen-md mx-auto text-center">
       <h2 class="text-2xl mt-6 font-medium">We are a network of scientists, researchers and developers building the next generation of open science digital spaces.</h2>
     </div> #}
-    <div class="">
-      <h1 class="text-6xl font-bold font-mono">Open Science Network</h1>
-      <h3 class="text-lg uppercase mt-6 font-black leading-normal font-mono">Federated digital spaces for open science communities</h3>
-      <h3 class="text-4xl mt-10 font-black leading-normal font-mono">The new wave of open science will boost <a href="" class="link font-extrabold">sharing</a>, <a href="" class="link font-extrabold">collaboration</a> and <a href="" class="link font-extrabold">knowledge</a> outside of corporate monopolies. <br/>And it will be <a href="" class="link font-extrabold">federated</a>.</h3>
+    <div class="col-span-6 lg:col-span-3">
+      <h1 class="text-4xl uppercase font-bold font-mono">Open Science Network</h1>
+      {# <h3 class="text-lg uppercase mt-6 font-black leading-normal font-mono">Federated digital spaces for open science communities</h3> #}
+      <h3 class="text-4xl mt-4 font-black leading-normal">The next generation of open science platform.</h3>
+      <div class="flex mt-8 items-center gap-10">
+        <div class="text-lg font-black uppercase flex items-center gap-2">
+          <span class="w-10 h-10 bg-white rounded-full items-center place-content-center flex">
+            <svg class="w-5 h-5 text-primary" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" d="M11.5 1A3.5 3.5 0 0 0 8 4.5V7H2.5A1.5 1.5 0 0 0 1 8.5v5A1.5 1.5 0 0 0 2.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 9.5 7V4.5a2 2 0 1 1 4 0v1.75a.75.75 0 0 0 1.5 0V4.5A3.5 3.5 0 0 0 11.5 1"/></svg>
+          </span>
+          <span>Open</span>
+        </div>
+        <div class="text-lg font-black uppercase flex items-center gap-2">
+          <span class="w-10 h-10 bg-white rounded-full items-center place-content-center flex">
+            <svg class="w-5 h-5 text-primary" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M21 9h-6v13h-2v-6h-2v6H9V9H3V7h18m-9-5a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2"/></svg>
+          </span>
+          <span>Accessible</span>
+        </div>
+        <div class="text-lg font-black uppercase flex items-center gap-2">
+          <span class="w-10 h-10 bg-white rounded-full items-center place-content-center flex">
+            <svg class="w-5 h-5 text-primary" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M9.208 12.346c-.485 1-.953 1.154-1.208 1.154s-.723-.154-1.208-1.154c-.372-.768-.647-1.858-.749-3.187a20.77 20.77 0 0 0 3.914 0c-.102 1.329-.377 2.419-.75 3.187Zm.788-4.699C9.358 7.714 8.69 7.75 8 7.75s-1.358-.036-1.996-.103c.037-1.696.343-3.075.788-3.993C7.277 2.654 7.745 2.5 8 2.5s.723.154 1.208 1.154c.445.918.75 2.297.788 3.993m1.478 1.306c-.085 1.516-.375 2.848-.836 3.874a5.501 5.501 0 0 0 2.843-4.364c-.621.199-1.295.364-2.007.49m1.918-2.043c-.572.204-1.21.379-1.901.514c-.056-1.671-.354-3.14-.853-4.251a5.508 5.508 0 0 1 2.754 3.737m-8.883.514c.056-1.671.354-3.14.853-4.251A5.508 5.508 0 0 0 2.608 6.91c.572.204 1.21.379 1.901.514M2.52 8.463a5.501 5.501 0 0 0 2.843 4.364c-.46-1.026-.75-2.358-.836-3.874a15.535 15.535 0 0 1-2.007-.49M15 8A7 7 0 1 0 1 8a7 7 0 0 0 14 0" clip-rule="evenodd"/></svg>
+          </span>
+          <span>Federated</span>
+        </div>
+      </div>
       {# <h2 class="text-3xl mt-6 font-medium">We are a network of scientists, researchers and developers building the next generation of open science digital spaces.</h2> #}
-      <a href="mailto:team@openscience.network"  class="btn mt-8 border-primary-content text-primary-content btn-lg font-bold btn-outline rounded-full">Let's do it together</a>
+      <a href="mailto:team@openscience.network"  class="btn mt-12 border-primary-content text-primary-content btn-lg font-bold btn-outline rounded-full">Let's do it together</a>
+    </div>
+    <div class="col-span-3 hidden lg:block relative -mt-[50px]">
+      <div class="absolute shadow-xl rounded-xl bg-white left-0 top-0 w-full h-[540px]"></div>
     </div>
     {# <div class="grid font-mono border-b border-t border-base-300 border-dotted py-12 grid-cols-4 gap-8 mt-12">
         <div class="flex flex-col items-center gap-3">
@@ -36,7 +59,47 @@ eleventyNavigation:
       </div>
     #}
   </div>
+  <div class="m-6 mt-24">
+    <div class="flex items-center gap-3">
+      <h2 class="text-4xl text-primary font-extrabold font-mono">We support</h2>
+      <div class="flex flex-col flex-1 gap-1 mt-2">
+        <div class="border-t border-dashed w-full border-base-300"></div>
+        <div class="border-t border-dashed w-full border-base-300"></div>
+        <div class="border-t border-dashed w-full border-base-300"></div>
+        <div class="border-t border-dashed w-full border-base-300"></div>
+      </div>
+    </div>
+
+    <div class="prose mt-4">Open Science represents a global movement aimed at transforming the way research is conducted, shared, and utilized. Our mission aligns with this global effort to foster open and equitable access to scientific articles and data. Our development is carefully designed to complement and amplify these efforts, contributing to a worldwide ecosystem where scientific knowledge is freely available to everyone.</div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+    <a href="https://www.coalition-s.org/" target="blank" class="border hover:bg-base-200/40 relative flex items-center place-content-center border-base-300 rounded h-[265px]">
+      <div class="flex flex-col gap-1">
+        <p class="w-full text-center text-primary text-2xl font-black bottom-4 font-mono left-0">Plan S</p>
+        <p>Principles & Implementation</p>
+      </div>
+    </a>
+    <a href="https://i4oc.org" target="blank" class="border hover:bg-base-200/40 relative border-base-300 flex items-center place-content-center rounded h-[265px]">
+      <div class="flex flex-col gap-1">
+        <p class="w-full text-center text-primary text-2xl font-black bottom-4 font-mono left-0">I40C</p>
+        <p>Initiative for Open Citations</p>
+      </div>
+    </a>
+    <a href="https://i4oa.org" class="border hover:bg-base-200/40 relative border-base-300 flex items-center place-content-center rounded h-[265px]">
+      <div class="flex flex-col gap-1">
+        <p class="w-full text-center text-primary text-2xl font-black bottom-4 font-mono left-0">I40A</p>
+        <p>Initiative for Open Abstract</p>
+      </div>
+    </a>
+    <a class="border hover:bg-base-200/40 relative border-base-300 flex items-center place-content-center rounded h-[265px]">
+      <div class="flex flex-col gap-1">
+        <p class="w-full text-center text-primary text-2xl font-black bottom-4 font-mono left-0">Diamond OA</p>
+        <p>Action Plan for DOA</p>
+      </div>
+    </a>
+  </div>
+  </div>
 </div>
+
 
 
 <div id="about" class="max-w-screen-xl m-4 mx-auto border border-base-300">
