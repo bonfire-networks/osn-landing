@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Geist', 'sans-serif'],
-        'mono': ['GeistMono', 'mono']
+        'mono': ['Geist', 'sans-serif']
       },
       colors: {
         bonfire: colors.amber,
