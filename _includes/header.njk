@@ -1,9 +1,4 @@
-<div
-  class="sticky max-w-screen-xl md:mt-4 mx-auto border border-b-0 mb-0 border-base-300 border-b border-b-dotted border-base-300 top-0 z-[999999999999999999] transition duration-500 ease-in-out"
-  x-data="{open: false, atTop: false}" 
-  :class="{ 'shadow-lg': atTop, 'bg-transparent text-base-content': !atTop, 'bg-base-100 text-base-content': atTop }"
-  @scroll.window="atTop = (window.pageYOffset < 50) ? false: true"
-    >
+<div x-data="{open: false}" class="max-w-screen-xl md:mt-4 mx-auto mb-0 top-0 z-[999999999999999999] transition duration-500 ease-in-out">
     {# <div class="absolute inset-x-0 top-0 z-20 flex justify-center overflow-hidden pointer-events-none">
       <div class="w-[108rem] flex-none flex justify-end">
           <source srcset="/img/bgover.png" type="image/avif">
@@ -13,56 +8,52 @@
     </div> #}
 
     <div class="">
-      <header class="relative z-30 lg:px-8 mx-auto navbar">
-        <div class="navbar-start w-[70%]">
-          <div class="flex  items-center flex-shrink-0">
+      <header class="relative z-30 mx-auto !p-0 !m-0 navbar">
+        <div class="flex-1 w-full navbar-start">
+          <div class="flex bg-primary rounded-xl px-8 h-20 items-center flex-shrink-0">
             <a href="/" class="flex items-center space-x-4">
-              <span class="flex items-center"><span class="text-base font-bold tracking-wider text-base-content">Open Science Network</span> 
+              <span class="flex items-center"><span class="text-white font-black tracking-wider  text-xl text-base-content">Open Science<br/> Network</span> 
               </span>
             </a>
           </div>
-           <div class="ml-4 hidden xl:flex">
-          <ul class="flex-row  p-0 font-medium menu menu-compact menu-horizontal">
-            <li>
-              <a href="#about" role="button" tabindex="0" class="flex items-center gap-2">
-                <span>About</span>
-              </a>
-            </li>
+           <div class="ml-2 h-20 px-6 flex-1 rounded-xl justify-between items-center bg-white flex">
+            <ul class="flex-row hidden lg:flex p-0 font-medium menu menu-compact menu-horizontal">
+              <li>
+                <a href="#about" role="button" tabindex="0" class="flex items-center gap-2">
+                  <span>About</span>
+                </a>
+              </li>
 
-            <li>
-              <a href="#pilots" role="button" tabindex="0" class="flex items-center gap-2">
-                <span>Pilots</span>
-              </a>
-            </li>
+              <li>
+                <a href="#pilots" role="button" tabindex="0" class="flex items-center gap-2">
+                  <span>Pilots</span>
+                </a>
+              </li>
 
-            <li>
-              <a href="#features" role="button" tabindex="0" class="flex items-center gap-2">
-                <span>Features</span>
-              </a>
-            </li>
+              <li>
+                <a href="#features" role="button" tabindex="0" class="flex items-center gap-2">
+                  <span>Features</span>
+                </a>
+              </li>
 
-            <li>
-              <a href="#faqs" role="button" tabindex="0" class="flex items-center gap-2">
-                <span>Faqs</span>
-              </a>
-            </li>
+              <li>
+                <a href="#faqs" role="button" tabindex="0" class="flex items-center gap-2">
+                  <span>Faqs</span>
+                </a>
+              </li>
 
-            <li>
-              <a href="#contribute" role="button" tabindex="0" class="flex items-center gap-2">
-                <span>Contribute</span>
-              </a>
-            </li>
+              <li>
+                <a href="#contribute" role="button" tabindex="0" class="flex items-center gap-2">
+                  <span>Contribute</span>
+                </a>
+              </li>
 
             
-          </ul>
-        </div>
+            </ul>
+        
         
 
-
-
-        </div>
-        
-        <div class="navbar-end">
+        <div class="justify-end flex items-center gap-2">
            <label for="theme_controller" class="swap swap-rotate mr-4">
   
               <!-- this hidden checkbox controls the state -->
@@ -101,6 +92,15 @@
         </div>
       
 
+        </div>
+        
+
+
+
+        </div>
+        
+        
+
     
       </header>
     </div>
@@ -110,7 +110,7 @@
       id="mobile-menu" 
       x-show="open" 
       style="display: none;">
-      <ul class="p-0 menu ">
+      <ul class="p-0 menu menu-lg rounded-xl mt-2 bg-white">
           <li>
               <a href="#about" role="button" tabindex="0" class="flex items-center gap-2">
                 <span>About</span>
