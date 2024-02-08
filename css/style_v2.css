@@ -8238,6 +8238,11 @@ details.collapse summary::-webkit-details-marker {
   border-color: rgb(255 255 255 / 0.5);
 }
 
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .\!border-opacity-40 {
   --tw-border-opacity: 0.4 !important;
 }
@@ -8900,6 +8905,10 @@ details.collapse summary::-webkit-details-marker {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:underline {
+  text-decoration-line: underline;
 }
 
 @media (min-width: 640px) {
