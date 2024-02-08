@@ -9001,6 +9001,15 @@ details.collapse summary::-webkit-details-marker {
   .md\:pt-4 {
     padding-top: 1rem;
   }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:leading-normal {
+    line-height: 1.5;
+  }
 }
 
 @media (min-width: 1024px) {
