@@ -8994,6 +8994,10 @@ details.collapse summary::-webkit-details-marker {
     flex-direction: row;
   }
 
+  .md\:items-center {
+    align-items: center;
+  }
+
   .md\:pt-4 {
     padding-top: 1rem;
   }
