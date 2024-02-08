@@ -8243,6 +8243,10 @@ details.collapse summary::-webkit-details-marker {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.border-white\/70 {
+  border-color: rgb(255 255 255 / 0.7);
+}
+
 .\!border-opacity-40 {
   --tw-border-opacity: 0.4 !important;
 }
