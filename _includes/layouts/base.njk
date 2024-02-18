@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="w-full antialiased" lang="en">
+<html data-theme="light" class="w-full antialiased bg-base-100" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
     <link
     rel="stylesheet" href="{{ '/css/style_v2.css' | url }}">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@marcreichel/alpine-typewriter/dist/alpine-typewriter.min.js" defer></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
@@ -16,9 +17,9 @@
     <script src="//unpkg.com/alpinejs" defer></script>
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
   </head>
-  <body data-theme="bonfire" class="body-theme w-full bg-base-100 antialiased">
+  <body  class="body-theme w-full bg-base-100 antialiased">
     
-      {% include "header.njk" %}
+      {# {% include "header.njk" %} #}
       {{ content | safe }}
       {% include "footer.njk" %}
   </body>

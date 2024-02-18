@@ -23,16 +23,7 @@ module.exports = {
     themes: [
       {
         light: {
-          ...require("daisyui/src/theming/themes")["nord"],
-        }
-      },
-      {
-        bonfire: {
-          ...require("daisyui/src/theming/themes")["retro"],
-          "base-100": "#F3EDE4",
-          "base-300": "#000000",
-          "primary": "#FF5E30",
-          "primary-content": "#ffffff"
+          ...require("daisyui/src/theming/themes")["light"],
         }
       },
       "cupcake", "dark", "bumblebee", "emerald", "corporate", "synthwave", "retro", "cyberpunk", "valentine", "halloween", "garden", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "luxury", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter", "dim", "nord", "sunset"

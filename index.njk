@@ -4,341 +4,99 @@ eleventyNavigation:
   key: Home
   order: 1
 ---
-<section class="max-w-screen-xl mt-0 pt-2 mx-auto grid lg:grid-cols-2 gap-2">
-  <div class="rounded-xl bg-cover bg-norepeat bg-center text-primary-content mt-0 p-16 bg-primary">
-    <h3 class="text-3xl md:text-5xl font-black md:leading-normal">We are a network of scientists, developers and organizations building the next generation of open science platform.</h3>
-    <div class="flex flex-col md:flex-row mt-8 items-start md:items-center gap-10">
-      <div class="text-lg font-black uppercase flex items-center gap-2">
-        <span class="w-10 h-10 bg-white rounded-full items-center place-content-center flex">
-          <svg class="w-5 h-5 text-primary" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" d="M11.5 1A3.5 3.5 0 0 0 8 4.5V7H2.5A1.5 1.5 0 0 0 1 8.5v5A1.5 1.5 0 0 0 2.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 9.5 7V4.5a2 2 0 1 1 4 0v1.75a.75.75 0 0 0 1.5 0V4.5A3.5 3.5 0 0 0 11.5 1"/></svg>
-        </span>
-        <span>Open</span>
-      </div>
-      <div class="text-lg font-black uppercase flex items-center gap-2">
-        <span class="w-10 h-10 bg-white rounded-full items-center place-content-center flex">
-          <svg class="w-5 h-5 text-primary" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M21 9h-6v13h-2v-6h-2v6H9V9H3V7h18m-9-5a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2"/></svg>
-        </span>
-        <span>Accessible</span>
-      </div>
-      <div class="text-lg font-black uppercase flex items-center gap-2">
-        <span class="w-10 h-10 bg-white rounded-full items-center place-content-center flex">
-          <svg class="w-5 h-5 text-primary" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M9.208 12.346c-.485 1-.953 1.154-1.208 1.154s-.723-.154-1.208-1.154c-.372-.768-.647-1.858-.749-3.187a20.77 20.77 0 0 0 3.914 0c-.102 1.329-.377 2.419-.75 3.187Zm.788-4.699C9.358 7.714 8.69 7.75 8 7.75s-1.358-.036-1.996-.103c.037-1.696.343-3.075.788-3.993C7.277 2.654 7.745 2.5 8 2.5s.723.154 1.208 1.154c.445.918.75 2.297.788 3.993m1.478 1.306c-.085 1.516-.375 2.848-.836 3.874a5.501 5.501 0 0 0 2.843-4.364c-.621.199-1.295.364-2.007.49m1.918-2.043c-.572.204-1.21.379-1.901.514c-.056-1.671-.354-3.14-.853-4.251a5.508 5.508 0 0 1 2.754 3.737m-8.883.514c.056-1.671.354-3.14.853-4.251A5.508 5.508 0 0 0 2.608 6.91c.572.204 1.21.379 1.901.514M2.52 8.463a5.501 5.501 0 0 0 2.843 4.364c-.46-1.026-.75-2.358-.836-3.874a15.535 15.535 0 0 1-2.007-.49M15 8A7 7 0 1 0 1 8a7 7 0 0 0 14 0" clip-rule="evenodd"/></svg>
-        </span>
-        <span>Federated</span>
-      </div>
-    </div>
-    <a href="mailto:team@openscience.network"  class="btn mt-12 border-primary-content text-primary-content btn-lg font-bold btn-outline rounded-full">Let's do it together</a>
+<div class="min-h-screen flex flex-col justify-start !text-base-content aurora">
+<div class="aurora-overlay z-10"></div>
+<section class="max-w-screen-lg w-full z-50 mx-auto">
+  <div class="w-[600px] mx-auto">
+    <h1 class="mt-32  text-base-content font-bold">Open Science Network</h1>
   </div>
-  <div class="bg-white h-full rounded-xl">
-    <img src="/img/bgg.png" class="object-cover object-center w-full h-full rounded-xl" alt="Open Science Network">
+  <div class="w-[600px] mx-auto">
+    {# Using Alpine Given an array of words I want the text to programmatically switch them within a <span> after 4 seconds #}
+    <h2 class="mt-32 text-4xl font-semibold">Science <span x-data="{ words: ['produced', 'shared', 'discussed', 'reviewed']}" x-typewriter.cursor.2000ms="words" class="relative z-50 adj-cursor"></span> in the open web</h2>  
   </div>
-</section>
+  <div class="w-[600px] mx-auto">
+    {# Using Alpine Given an array of words I want the text to programmatically switch them within a <span> after 4 seconds #}
+    <h3 class="mt-4 text-2xl font-semibold">We are a network of scientists, developers and organizations building the next generation of open science platform.</h3>  
   
-  
-  
-  <section class="max-w-screen-xl mt-2 mx-auto bg-white rounded-xl p-12">
-    <div class="flex items-center gap-3 relative">
-      <h2 class="text-3xl font-extrabold font-mono">We support</h2>
-      <div class="flex flex-col flex-1 gap-0.5 mt-2 absolute left-0 w-full top-[-8px]">
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-      </div>
-    </div>
-
-    <div class="prose mt-4">Open Science represents a global movement aimed at transforming the way research is conducted, shared, and utilized. Our mission aligns with this global effort to foster open and equitable access to scientific articles and data. Our development is carefully designed to complement and amplify these efforts, contributing to a worldwide ecosystem where scientific knowledge is freely available to everyone.</div>
-  </section>
+    <div class="prose prose-lg mt-8">
+      <h4>What it’s all about</h4>
+      <p>We are committed to develop an open, federated digital space to push the boundaries of open science and scholarly communication.</p>
+      <p>In times of misinformation, fake news, mass surveillance and political propaganda, science must be freed from corporate monopolies. Scientists, researchers, academics and their related organizations must have control over the medium where their work is published, reviewed, shared, read and discussed.</p>
     
-    <section class="max-w-screen-xl mt-2 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-2">
-    <a href="https://www.coalition-s.org/" target="blank" class="rounded-xl bg-white hover:bg-base-200/40 relative flex items-center place-content-center border-base-300 rounded h-[265px]">
-      <div class="flex flex-col gap-1">
-        <p class="w-full text-center text-primary text-2xl font-black bottom-4 font-mono left-0">Plan S</p>
-        <p>Principles & Implementation</p>
-      </div>
-    </a>
-    <a href="https://i4oc.org" target="blank" class="rounded-xl bg-white hover:bg-base-200/40 relative  flex items-center place-content-center rounded h-[265px]">
-      <div class="flex flex-col gap-1">
-        <p class="w-full text-center text-primary text-2xl font-black bottom-4 font-mono left-0">I40C</p>
-        <p>Initiative for Open Citations</p>
-      </div>
-    </a>
-    <a href="https://i4oa.org" class="rounded-xl bg-white hover:bg-base-200/40 relative  flex items-center place-content-center rounded h-[265px]">
-      <div class="flex flex-col gap-1">
-        <p class="w-full text-center text-primary text-2xl font-black bottom-4 font-mono left-0">I40A</p>
-        <p>Initiative for Open Abstract</p>
-      </div>
-    </a>
-    <a class="rounded-xl bg-white hover:bg-base-200/40 relative  flex items-center place-content-center rounded h-[265px]">
-      <div class="flex flex-col gap-1">
-        <p class="w-full text-center text-primary text-2xl font-black bottom-4 font-mono left-0">Diamond OA</p>
-        <p>Action Plan for DOA</p>
-      </div>
-    </a>
-    </section>
+      <h4>Features</h4>
 
-
-
-<div class="max-w-screen-xl mt-0 pt-2 mx-auto grid lg:grid-cols-2 gap-2">
-  <section id="about" class="bg-white rounded-xl">
-    <div class="p-12">
-      <div class="flex items-center gap-3 relative">
-      <h2 class="text-3xl font-extrabold font-mono">What it's all about</h2>
-      <div class="flex flex-col flex-1 gap-0.5 mt-2 absolute left-0 w-full top-[-8px]">
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
+      <p>The Open Science digital space is developed on <a href="https://bonfirenetworks.org" target="blank" class="link">Bonfire Networks</a> - a modular and open source framework to build federated digital spaces. Some of the features includes:</p>
+    </div>
+  </div>
+  <div class="grid px-2 md:px-0 grid-cols-1 md:grid-cols-2 my-16 gap-4">
+    <div class="relative p-4 border-base-200 border bg-base-200/50 h-[230px] flex items-center place-content-center flex-col rounded-lg shadow">
+      <img src="/img/signup.png" class="w-[220px] mx-auto" />
+      <span class="absolute left-0 right-0 bottom-2 text-center font-bold">Signup with ORCID</span>
+    </div>
+    <div class="relative p-4 border-base-200 border bg-base-200/50 h-[230px] flex items-center place-content-center flex-col rounded-lg shadow">
+      <img src="/img/import.png" class="w-[340px] mx-auto" />
+      <span class="absolute left-0 right-0 bottom-2 text-center font-bold">Import your publications</span>
+    </div>
+    <div class="relative p-4 border-base-200 border bg-base-200/50 h-[230px] flex items-center place-content-center flex-col rounded-lg shadow">
+      <img src="/img/draft.png" class="w-[340px] mx-auto" />
+      <span class="absolute left-0 right-0 bottom-2 text-center font-bold">Draft, Edit, Review & Publish new papers</span>
+    </div>
+    <div class="relative p-4 border-base-200 border bg-base-200/50 h-[230px] flex items-center place-content-center flex-col rounded-lg shadow">
+      <img src="/img/search.png" class="w-[380px] mx-auto" />
+      <span class="absolute left-0 right-0 bottom-2 text-center font-bold">Follow scientists & engage in discussions</span>
+    </div>
+    <div class="relative p-4 border-base-200 border bg-base-200/50 h-[230px] flex items-center place-content-center flex-col rounded-lg shadow">
+      <img src="/img/semantic.png" class="w-[120px] mx-auto" />
+      <span class="absolute left-0 right-0 bottom-2 text-center font-bold">Avoid fragmentation by leveraging semantic data</span>
+    </div>
+    <div class="flex flex-col gap-4">
+      <div class="p-4 bg-base-200 flex items-center gap-2 rounded-lg font-bold shadow">
+        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024"><path fill="currentColor" d="M832 64H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32m-600 72h560v208H232zm560 480H232V408h560zm0 272H232V680h560zM304 240a40 40 0 1 0 80 0a40 40 0 1 0-80 0m0 272a40 40 0 1 0 80 0a40 40 0 1 0-80 0m0 272a40 40 0 1 0 80 0a40 40 0 1 0-80 0"/></svg>
+        <span>Self Host your open science digital space</span></div>
+      <div class="p-4 bg-base-200 flex items-center gap-2 rounded-lg font-bold shadow">
+        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M2 6c0-1.505.78-3.08 2-4c0 .845.69 2 2 2a3 3 0 0 1 3 3c0 .386-.079.752-.212 1.091a74.515 74.515 0 0 1 2.191 1.808l-2.08 2.08a75.852 75.852 0 0 1-1.808-2.191A2.977 2.977 0 0 1 6 10c-2.21 0-4-1.79-4-4m12.152 6.848l1.341-1.341A4.446 4.446 0 0 0 17.5 12A4.5 4.5 0 0 0 22 7.5c0-.725-.188-1.401-.493-2.007L18 9l-2-2l3.507-3.507A4.446 4.446 0 0 0 17.5 3A4.5 4.5 0 0 0 13 7.5c0 .725.188 1.401.493 2.007L3 20l2 2l6.848-6.848a68.562 68.562 0 0 0 5.977 5.449l1.425 1.149l1.5-1.5l-1.149-1.425a68.562 68.562 0 0 0-5.449-5.977"/></svg>
+        <span>Customize the Themes and Features</span></div>
+      <div class="p-4 bg-base-200 flex items-center gap-2 rounded-lg font-bold shadow">
+        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M2.828 4.328C5.26 1.896 9.5 1.881 11.935 4.317c.024.024.046.05.067.076c1.391-1.078 2.993-1.886 4.777-1.89a6.22 6.22 0 0 1 4.424 1.825c.559.56 1.023 1.165 1.34 1.922c.318.756.47 1.617.468 2.663c0 2.972-2.047 5.808-4.269 8.074c-2.098 2.14-4.507 3.924-5.974 5.009l-.311.23a.752.752 0 0 1-.897 0l-.312-.23c-1.466-1.085-3.875-2.869-5.973-5.009c-2.22-2.263-4.264-5.095-4.27-8.063a6.216 6.216 0 0 1 1.823-4.596m8.033 1.042c-1.846-1.834-5.124-1.823-6.969.022a4.712 4.712 0 0 0-1.382 3.52c0 2.332 1.65 4.79 3.839 7.022c1.947 1.986 4.184 3.66 5.66 4.752a78.214 78.214 0 0 0 2.159-1.645l-2.14-1.974a.752.752 0 0 1 1.02-1.106l2.295 2.118c.616-.52 1.242-1.08 1.85-1.672l-2.16-1.992a.753.753 0 0 1 1.021-1.106l2.188 2.02a18.963 18.963 0 0 0 1.528-1.877l-.585-.586l-1.651-1.652c-1.078-1.074-2.837-1.055-3.935.043c-.379.38-.76.758-1.132 1.126c-1.14 1.124-2.96 1.077-4.07-.043c-.489-.495-.98-.988-1.475-1.482a.752.752 0 0 1-.04-1.019c.234-.276.483-.576.745-.893c.928-1.12 2.023-2.442 3.234-3.576m9.725 6.77c.579-1.08.92-2.167.92-3.228c.002-.899-.128-1.552-.35-2.08c-.22-.526-.551-.974-1.017-1.44a4.71 4.71 0 0 0-3.356-1.384c-1.66.004-3.25.951-4.77 2.346c-1.18 1.084-2.233 2.353-3.188 3.506l-.351.423c.331.332.663.664.993.998a1.375 1.375 0 0 0 1.943.03c.37-.365.748-.74 1.125-1.118c1.662-1.663 4.373-1.726 6.06-.045c.56.558 1.12 1.12 1.658 1.658Z"/></svg>
+        <span>Set your own Code of Conduct</span>
       </div>
     </div>
-      <div class="prose prose-xl max-w-full mt-12">
-        Scientific knowledge lies at the core of modern society. We need open, federated digital infrastructure to push the boundaries of open science and scholarly communication. <br/>
-        In times of misinformation, fake news, mass surveillance and political propaganda, science must be freed from corporate monopolies. Scientists, researchers, academics and their related organizations must have control over the medium where their work is published, reviewed, shared, read and discussed.<br/>
-        The OpenScience Network is developing open digital spaces that address the most urgent priorities in open science communities.<br/>
-        By leveraging a federated digital space, communities will be able to draft papers, browse contextual articles, engage in meaningful discussions and collaborate with other scientists without being siloed in walled gardens or engaged in dark patterns. Scientific discoveries will be vetted, put in perspective and linked to prior work. <br />
-        The Opencience Network will provide the digital tools to facilitate standing on the shoulders of giants.
-      </div>
+  </div>
+
+  <div class="w-[600px] mx-auto">
+    <div class="prose prose-lg mt-8">
+      <h4>Community driven</h4>
+      <p>We aim to design and develop the Open Science platform through continuous iteration alongside the involved communities. We have defined four pilots to explore various domains of Open Science—production, sharing, discussion, and peer review.</p>
+      <p>Organizations participating in each pilot will guarantee that the digital platform meets their specific needs and priorities. Are you interested in participating in one of the pilots? <a href="mailto:team@openscience.network" class="link">Please contact us</a>.</p>
     </div>
-  </section>
+  </div>
 
-  <div class="flex flex-col gap-2">
-    <section class="max-w-screen-xl mx-auto bg-white rounded-xl p-12">
-    <div class="flex items-center gap-3 relative">
-      <h2 class="text-3xl font-extrabold font-mono">Our Mission</h2>
-      <div class="flex flex-col flex-1 gap-0.5 mt-2 absolute left-0 w-full top-[-8px]">
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-      </div>
+
+<section class="my-16 px-2 md:px-0 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-2">
+    <div class="relative flex items-center place-content-center bg-black text-white rounded-xl ">
+      <img class="my-10 opacity-80" src="/img/community.svg" />
+      <p class="absolute w-full text-center text-white  font-bold bottom-4 left-0">Online community</p>
     </div>
-
-    <div class="prose prose-xl max-w-full mt-24">Develop an open source platform that can act as open repositories, journals and community digital space to foster open science knowledge according to the OESC 2024 agenda.</div>
-  </section>
-
-  <section class="bg-white rounded-xl p-12">
-    <div class="flex items-center gap-3 relative">
-      <h2 class="text-3xl font-extrabold font-mono">Grounded in research</h2>
-      <div class="flex flex-col flex-1 gap-0.5 mt-2 absolute left-0 w-full top-[-8px]">
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-      </div>
+    <div class="relative bg-black text-white flex items-center place-content-center rounded-xl ">
+      <img class="my-8 10pacity-80" src="/img/magazine.svg" />
+      <p class="absolute w-full text-center text-white  font-bold bottom-4 left-0">Open Journal</p>
     </div>
-  </section>
-
-    <a target="blank" href="https://royalsocietypublishing.org/doi/10.1098/rsos.230206" class="flex group w-full bg-white items-center gap-4 rounded-xl p-4">
-      <div style="background-image:url(/img/royal.png)" class="bg-cover w-24 h-24 bg-black rounded-xl bg-center"></div>
-      <div class="flex flex-col">
-        <div class="text-lg group-hover:underline font-bold">Replacing academic journals</div>
-        <div class="">The Royal Society</div>
-      </div>
-    </a>
-
-    <a target="blank" href="https://council.science/wp-content/uploads/2023/11/The-Case-for-Reform-for-Scientific-Publishing_2023.pdf" class="flex group  w-full bg-white items-center gap-4 rounded-xl p-4">
-      <div style="background-image:url(/img/isc.png)" class="bg-cover border-black border w-24 h-24 bg-black rounded-xl bg-center"></div>
-      <div class="flex flex-col">
-        <div class="text-lg group-hover:underline font-bold">The case for Reform of Scientific Publishing</div>
-        <div class="">International Science Council</div>
-      </div>
-    </a>
-
-    <a target="blank" href="https://www.coalition-s.org/towards-responsible-publishing/" class="flex group w-full bg-white items-center gap-4 rounded-xl p-4">
-      <div style="background-image:url(/img/coalition.png)" class="bg-cover w-24 h-24 bg-black rounded-xl bg-center"></div>
-      <div class="flex flex-col">
-        <div class="text-lg group-hover:underline font-bold">Towards responsible publishing</div>
-        <div class="">Coalition-S</div>
-      </div>
-    </a>
-
-    <a target="blank" href="#" class="flex group w-full bg-white items-center place-content-center gap-4 rounded-xl p-4">
-      <div class="flex items-center gap-3">
-        <div class="text-lg font-bold group-hover:underline">View all the publications</div>
-        <svg class="w-6 h-6 text-primary" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="currentColor" d="m359.873 121.377l-22.627 22.627l95.997 95.997H16v32.001h417.24l-95.994 95.994l22.627 22.627L494.498 256z"/></svg>
-      </div>
-    </a>
-
-</div>
-</div>
-
-
-<section id="pilots" class="max-w-screen-xl mt-2 mx-auto bg-black rounded-xl p-12">
-    <div class="flex items-center gap-3 relative">
-      <h2 class="text-3xl font-extrabold text-white font-mono">4 Pilots</h2>
-      <div class="flex flex-col flex-1 gap-0.5 mt-2 absolute left-0 w-full top-[-8px]">
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
-      </div>
+    <div class="relative bg-black text-white flex items-center place-content-center rounded-xl ">
+      <img class="my-8 opacity-100" src="/img/org.svg" />
+      <p class="absolute w-full text-center text-white  font-bold bottom-4 left-0">Organization</p>
     </div>
-
-    <div class="prose text-white mt-4">We aim to design and develop the Open Science platform through continuous iteration alongside the involved communities. We have defined four pilots to explore various domains of Open Science—production, sharing, discussion, and peer review.<br/>
-      Organizations participating in each pilot will guarantee that the digital platform meets their specific needs and priorities. Are you interested in participating in one of the pilots? <a href="mailto:team@openscience.network" class="link text-white">Please contact us</a>.</div>
-  </section>
-
-  <section class="max-w-screen-xl mt-2 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-2">
-    <div class="relative flex items-center place-content-center bg-black text-white rounded-xl h-[265px]">
-      <img class="opacity-80" src="/img/community.svg" />
-      <p class="absolute w-full text-center text-white text-xl font-bold bottom-4 font-mono left-0">Online community</p>
-    </div>
-    <div class="relative bg-black text-white flex items-center place-content-center rounded-xl h-[265px]">
-      <img class="opacity-80" src="/img/magazine.svg" />
-      <p class="absolute w-full text-center text-white text-xl font-bold bottom-4 font-mono left-0">Open Journal</p>
-    </div>
-    <div class="relative bg-black text-white flex items-center place-content-center rounded-xl h-[265px]">
-      <img class="opacity-80" src="/img/org.svg" />
-      <p class="absolute w-full text-center text-white text-xl font-bold bottom-4 font-mono left-0">Organization</p>
-    </div>
-    <div class="relative bg-black text-white flex items-center place-content-center rounded-xl h-[265px]">
-      <img class="opacity-80" src="/img/university.svg" />
-      <p class="absolute w-full text-center text-white text-xl font-bold bottom-4 font-mono left-0">University</p>
+    <div class="relative bg-black text-white flex items-center place-content-center rounded-xl ">
+      <img class="my-10 opacity-80" src="/img/university.svg" />
+      <p class="absolute w-full text-center text-white  font-bold bottom-4 left-0">University</p>
     </div>
     </section>
 
-
-<section class="max-w-screen-xl mt-0 pt-2 mx-auto grid lg:grid-cols-2 gap-2">
-  <div class="rounded-xl bg-[#F4B34B] text-white p-12">
-    <h2 class="text-4xl font-extrabold leading-normal font-mono uppercase">Open science <br/> technology stack</h2>
-    <div class="text-xl mt-4">The Open Science digital space is built using a modern and open source framework made for developing federated digital spaces, called Bonfire Network. The framework guarantees freedom to build custom user experience, features and governance model, while leveraging upon a solid foundation of social features.</div>
-    <a href="https://bonfirenetworks.org" target="blank" class="btn mt-8 border-primary-content text-primary-content btn-lg font-bold btn-outline rounded-full">About Bonfire Network</a>
-  </div>
-  <div class="border relative border-primary-content rounded-xl">
-    <img src="/img/bonfire.jpg" class="object-fit w-full h-full rounded-xl" alt="Bonfire Network">
-  </div>
-</section>
-
-
-  <section id="features" class="max-w-screen-xl mt-2 mx-auto bg-white rounded-xl p-12">
-    <div class="flex items-center gap-3 relative">
-      <h2 class="text-3xl font-extrabold font-mono">Features</h2>
-      <div class="flex flex-col flex-1 gap-0.5 mt-2 absolute left-0 w-full top-[-8px]">
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-      </div>
-    </div>
-
+<div class="w-[600px] mx-auto">
+  <div class="prose prose-lg mt-2">
+    <h4>FAQs</h4>
     <div class="collapse mt-8 border-b border-dashed  border-base-300 rounded-none collapse-plus ">
       <input type="radio" name="my-accordion-3" /> 
-      <div class="collapse-title text-xl font-bold text-primary !px-0">
-        Signup with ORCID credentials
-      </div>
-      <div class="collapse-content !px-0"> 
-        <p>This milestone involves developing an authentication and authorization system that allows users to log in to the Bonfire platform using their ORCID credentials. It includes setting up secure connections with ORCID's APIs, retrieving user details, and managing user sessions. The objective is to make the login process seamless and to provide an integrated experience for scientists, as their professional information and social presence will be tied to their ORCID identifiers.</p>
-      </div>
-    </div>
-    
-
-    <div class="collapse border-b border-dashed  border-base-300 rounded-none collapse-plus ">
-      <input type="radio" name="my-accordion-3" /> 
-      <div class="collapse-title text-xl font-bold text-primary !px-0">
-        Import publications in user profile
-      </div>
-      <div class="collapse-content !px-0"> 
-        <p>This feature will enable users to import their publication history from ORCID. It involves creating scripts to extract publication details from ORCID, convert and display this data into a format compatible with the Bonfire platform. This way, scientists can showcase their research outputs in their profile pages.</p>
-      </div>
-    </div>
-
-    <div class="collapse border-b border-dashed  border-base-300 rounded-none collapse-plus ">
-      <input type="radio" name="my-accordion-3" /> 
-      <div class="collapse-title text-xl font-bold text-primary !px-0">
-        Fetch DOI metadata from links
-      </div>
-      <div class="collapse-content !px-0"> 
-        <p>For this feature, the platform will need to be able to fetch metadata from a DOI (Digital Object Identifier). This process involves using APIs to gather bibliographic details, such as the title, authors, abstract, publication date, and publisher. Once imported, this metadata can be used to create a new post or update an existing one, making it easy for researchers to share and discuss existing research articles.</p>
-      </div>
-    </div>
-
-    <div class="collapse border-b border-dashed  border-base-300 rounded-none collapse-plus ">
-      <input type="radio" name="my-accordion-3" /> 
-      <div class="collapse-title text-xl font-bold text-primary !px-0">
-        Pre-print sharing system
-      </div>
-      <div class="collapse-content !px-0"> 
-        <p>This involves building a subsystem where users can upload their pre-print papers in PDF format. The system will use Crossref's or DataCite's REST API to generate a new DOI for each pre-print. It will also include a built-in PDF viewer to read the paper directly on the platform. Additionally, the system will allow different versions of the pre-print paper to be uploaded and managed, facilitating the process of incorporating updates and corrections.</p>
-      </div>
-    </div>
-
-    <div class="collapse border-b border-dashed  border-base-300 rounded-none collapse-plus ">
-      <input type="radio" name="my-accordion-3" /> 
-      <div class="collapse-title text-xl font-bold text-primary !px-0">
-        Nanopublications
-      </div>
-      <div class="collapse-content !px-0"> 
-        <p>hello</p>
-      </div>
-    </div>
-
-    <div class="collapse border-b border-dashed  border-base-300 rounded-none collapse-plus ">
-      <input type="radio" name="my-accordion-3" /> 
-      <div class="collapse-title text-xl font-bold text-primary !px-0">
-        Topic groups that could act as journals
-      </div>
-      <div class="collapse-content !px-0"> 
-        <p>This feature will enable users to create and join groups focused on specific topics, akin to individual scientific journals. Each group will have its own feed where members can post, comment, and interact. This feature will include group management options, such as invitations, membership approval processes, and content moderation.</p>
-      </div>
-    </div>
-   
-    <div class="collapse border-b border-dashed  border-base-300 rounded-none collapse-plus ">
-      <input type="radio" name="my-accordion-3" /> 
-      <div class="collapse-title text-xl font-bold text-primary !px-0">
-        Badging system for posts in order to organize a peer-review process. 
-      </div>
-      <div class="collapse-content !px-0"> 
-        <p>A badging system will be implemented to tag and classify posts based on their content and status in the review process. Badges can be assigned to posts by editors or by a trusted group of scientists to signify stages of peer review, content types, or other noteworthy attributes. This feature will be crucial in organizing the peer-review process and guiding users through the flow of content.</p>
-      </div>
-    </div>
-
-    <div class="collapse rounded-none collapse-plus ">
-      <input type="radio" name="my-accordion-3" /> 
-      <div class="collapse-title text-xl font-bold text-primary !px-0">
-        Editor and custom roles
-      </div>
-      <div class="collapse-content !px-0"> 
-        <p>This involves creating a system of user permissions and roles within each group. The "editor" role will be introduced to manage the content within a group, approve posts, and facilitate discussions. Editors will have the power to moderate, edit, and delete posts within their group, thereby maintaining the quality and relevance of the group's content.</p>
-      </div>
-    </div>
-    
-    <div class="text-center mt-12 text-primary font-semibold">Do you have a feature request? Reach out at <a href="mailto:team@openscience.network" class="link">team@openscience.network</a></div>
-
-  </section>
-
-
-
-
-<section class="max-w-screen-xl mt-0 pt-2 mx-auto grid lg:grid-cols-2 gap-2">
-
-    <div id="faqs" class="bg-white p-12 rounded-xl ">
-      <div class="relative">
-      <h2 class="text-3xl font-extrabold font-mono">FAQs</h2>
-      <div class="flex flex-col flex-1 gap-0.5 mt-2 absolute left-0 w-full top-[-8px]">
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-      </div>
-      </div>
-
-      <div class="collapse mt-8 border-b border-dashed  border-base-300 rounded-none collapse-plus ">
-      <input type="radio" name="my-accordion-3" /> 
-      <div class="collapse-title text-xl !px-0 font-medium">
+      <div class="collapse-title !px-0 font-medium">
         What is an open science digital space?
       </div>
       <div class="collapse-content !px-0"> 
@@ -347,7 +105,7 @@ eleventyNavigation:
     </div>
     <div class="collapse border-b border-dashed  border-base-300 rounded-none collapse-plus ">
       <input type="radio" name="my-accordion-3" /> 
-      <div class="collapse-title text-xl !px-0 font-medium">
+      <div class="collapse-title !px-0 font-medium">
         Can i setup my own?
       </div>
       <div class="collapse-content !px-0"> 
@@ -356,7 +114,7 @@ eleventyNavigation:
     </div>
     <div class="collapse border-b border-dashed  border-base-300 rounded-none collapse-plus ">
       <input type="radio" name="my-accordion-3"  /> 
-      <div class="collapse-title text-xl !px-0 font-medium">
+      <div class="collapse-title !px-0 font-medium">
         Do i need technical skills?
       </div>
       <div class="collapse-content !px-0"> 
@@ -366,175 +124,71 @@ eleventyNavigation:
 
     <div class="collapse   border-base-300 rounded-none collapse-plus ">
       <input type="radio" name="my-accordion-3"  /> 
-      <div class="collapse-title text-xl !px-0 font-medium">
+      <div class="collapse-title !px-0 font-medium">
         Can I join an existing os digital space?
       </div>
       <div class="collapse-content !px-0"> 
         <p>hello</p>
       </div>
     </div>
-
-    </div>
-
-
-  <div class="bg-primary p-12 flex-1 rounded-xl">
-  <div class="relative">
-      <h2 class="text-3xl font-extrabold text-white font-mono">Network</h2>
-      <div class="flex flex-col flex-1 gap-0.5 mt-2 absolute left-0 w-full top-[-8px]">
-        <div class="border-t border-dotted w-full border-white-300/50"></div>
-        <div class="border-t border-dotted w-full border-white-300/50"></div>
-        <div class="border-t border-dotted w-full border-white-300/50"></div>
-        <div class="border-t border-dotted w-full border-white-300/50"></div>
-        <div class="border-t border-dotted w-full border-white-300/50"></div>
-        <div class="border-t border-dotted w-full border-white-300/50"></div>
-      </div>
-    </div>
-    <div class="flex items-center mt-6 gap-3">
-      <img src="/img/bjorn.jpg" class="w-12 h-12 rounded-full" alt="Bjorn">
-      <div class="flex flex-col">
-        <a href="http://brembs.net/" target="blank" class="link text-lg text-white font-bold">Björn Brembs</a>
-        <div class="uppercase text-sm -mt-0.5 text-white font-light">University of Regensburg</div>
-      </div>
-    </div>
-
-    <div class="flex items-center mt-6 gap-3">
-      <img src="/img/jorge.jpeg" class="w-12 h-12 rounded-full" alt="Bjorn">
-      <div class="flex flex-col">
-        <a href="https://kumulonimb.us" target="blank" class="link text-lg text-white font-bold">Jorge Saturno</a>
-        <div class="uppercase text-sm -mt-0.5 text-white font-light">Research scientist @ Physikalisch-Technische Bundesanstalt</div>
-      </div>
-    </div>
-
-    <div class="flex items-center mt-6 gap-3">
-      <img src="/img/Ulrike.jpg" class="w-12 h-12 rounded-full" alt="Bjorn">
-      <div class="flex flex-col">
-        <a href="https://fediscience.org/@UlrikeHahn" target="blank" class="link text-lg text-white font-bold">Ulrike Hahn</a>
-        <div class="uppercase text-sm -mt-0.5 text-white font-light">Academic @Birkbeck, Univ. of London - Centre for Cognition, Computation, and Modelling</div>
-      </div>
-    </div>
-
-    <div class="flex items-center mt-6 gap-3">
-      <img src="/img/Nibo.png" class="w-12 h-12 rounded-full" alt="Bjorn">
-      <div class="flex flex-col">
-        <a href="https://niboe.info/#" target="blank" class="link text-lg text-white font-bold">Niboe</a>
-        <div class="uppercase text-sm -mt-0.5 text-white font-light">Critical, responsible, and inclusive scientific dissemination.</div>
-      </div>
-    </div>
-
-    <div class="flex items-center mt-6 gap-3">
-      <div class="w-12 h-12 rounded-full bg-secondary"></div>
-      <div class="flex flex-col">
-        <a href="https://scibeh.org" target="blank" class="link text-lg text-white font-bold">SciBeh</a>
-        <div class="uppercase text-sm -mt-0.5 text-white font-light">Reconfiguring behavioral science for crisis knowledge management.</div>
-      </div>
-    </div>
-
-    
   </div>
 </div>
-</section>
 
 
-<section id="contribute" class="max-w-screen-xl mt-2 mx-auto bg-black rounded-xl p-12">
-    <div class="flex items-center gap-3 relative">
-      <h2 class="text-3xl font-extrabold text-white font-mono">Contribute</h2>
-      <div class="flex flex-col flex-1 gap-0.5 mt-2 absolute left-0 w-full top-[-8px]">
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
+<div class="w-[600px] mt-12 mx-auto">
+  <div class="prose prose-lg mt-2">
+    <h4>Network</h4>
+    <div class="flex items-center mt-4 gap-3">
+      <img src="/img/bjorn.jpg" class="w-10 h-10 !my-0 rounded-full" alt="Bjorn">
+      <div class="flex flex-col">
+        <a href="http://brembs.net/" target="blank" class="link font-medium">Björn Brembs</a>
+        <div class="uppercase text-sm -mt-0.5 font-light">University of Regensburg</div>
       </div>
     </div>
 
-    <div class="prose text-white mt-4">We have ambitious plans. Foster a new wave of scientific discussions online. Help fight misinformation offering actionable, interoperable bit of knowledge accessible to scientists and users. <br />
-    We want to make this free, open source and available to everyone, carrying the same vision as how science must be.<br />
-    We need your help to catalyze this energy and make this happen.</div>
-  </section>
-
-  <section class="max-w-screen-xl mt-2 mx-auto grid lg:grid-cols-2 gap-2">
-    <div class="bg-black rounded-xl p-12">
-        <div class="flex items-center gap-3 relative">
-      <h2 class="text-3xl font-extrabold text-white font-mono">Objectives</h2>
-      <div class="flex flex-col flex-1 gap-0.5 mt-2 absolute left-0 w-full top-[-8px]">
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
+    <div class="flex items-center mt-3 gap-3">
+      <img src="/img/jorge.jpeg" class="w-10 h-10 !my-0 rounded-full" alt="Bjorn">
+      <div class="flex flex-col">
+        <a href="https://kumulonimb.us" target="blank" class="link font-medium">Jorge Saturno</a>
+        <div class="uppercase text-sm -mt-0.5 font-light">Research scientist @ Physikalisch-Technische Bundesanstalt</div>
       </div>
     </div>
 
-    <div class="collapse mt-8 border-b border-dashed  border-white/50 rounded-none collapse-plus ">
-      <input type="radio" name="my-accordion-3" /> 
-      <div class="collapse-title text-xl font-bold text-primary !px-0">
-        Release the open science platform
-      </div>
-      <div class="text-white collapse-content !px-0"> 
-        <p>wip</p>
+    <div class="flex items-center mt-3 gap-3">
+      <img src="/img/Ulrike.jpg" class="w-10 h-10 !my-0 rounded-full" alt="Bjorn">
+      <div class="flex flex-col">
+        <a href="https://fediscience.org/@UlrikeHahn" target="blank" class="link font-medium">Ulrike Hahn</a>
+        <div class="uppercase text-sm -mt-0.5 font-light">Academic @Birkbeck, Univ. of London - Centre for Cognition, Computation, and Modelling</div>
       </div>
     </div>
-    <div class="collapse border-b border-dashed  border-white/50 rounded-none collapse-plus ">
-      <input type="radio" name="my-accordion-3" /> 
-      <div class="collapse-title text-xl font-bold text-primary !px-0">
-        Setup and test the platform with the pilots 
-      </div>
-      <div class="text-white collapse-content !px-0"> 
-        <p>wip</p>
-      </div>
-    </div>
-    <div class="collapse border-b border-dashed  border-white/50 rounded-none collapse-plus ">
-      <input type="radio" name="my-accordion-3" /> 
-      <div class="collapse-title text-xl font-bold text-primary !px-0">
-        Build a network of hosting providers 
-      </div>
-      <div class="text-white collapse-content !px-0"> 
-        <p>wip</p>
+
+    <div class="flex items-center mt-3 gap-3">
+      <img src="/img/Nibo.png" class="w-10 h-10 !my-0 rounded-full" alt="Bjorn">
+      <div class="flex flex-col">
+        <a href="https://niboe.info/#" target="blank" class="link font-medium">Niboe</a>
+        <div class="uppercase text-sm -mt-0.5 font-light">Critical, responsible, and inclusive scientific dissemination.</div>
       </div>
     </div>
-    <div class="collapse border-b border-dashed  border-white/50 rounded-none collapse-plus ">
-      <input type="radio" name="my-accordion-3" /> 
-      <div class="collapse-title text-xl font-bold text-primary !px-0">
-        Disseminate the results
-      </div>
-      <div class="text-white collapse-content !px-0"> 
-        <p>wip</p>
+
+    <div class="flex items-center mt-3 gap-3">
+      <div class="w-10 h-10 !my-0 rounded-full bg-secondary"></div>
+      <div class="flex flex-col">
+        <a href="https://scibeh.org" target="blank" class="link font-medium">SciBeh</a>
+        <div class="uppercase text-sm -mt-0.5 font-light">Reconfiguring behavioral science for crisis knowledge management.</div>
       </div>
     </div>
   </div>
+</div>
 
-      <div class="bg-black rounded-xl p-12">
-        <div class="flex items-center gap-3 relative">
-      <h2 class="text-3xl font-extrabold text-white font-mono">Transparent Budget</h2>
-      <div class="flex flex-col flex-1 gap-0.5 mt-2 absolute left-0 w-full top-[-8px]">
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
-        <div class="border-t border-dotted w-full border-white/50"></div>
-      </div>
-    </div>
-          <div class="flex flex-col gap-6 my-6">
-            <div class="font-bold text-lg text-primary">We are in the process of setting up our Open Collective account</div>
-          </div>
-        </div>
-      </div>
-  </section>
+<div class="w-[600px] mt-16 mx-auto">
+  <div class="prose prose-lg mt-8">
+    <h4>Contribute</h4>
 
-<div class="max-w-screen-xl p-12 mt-2 mx-auto rounded-xl bg-white">
-<div class="flex items-center gap-3 relative">
-      <h2 class="text-3xl font-extrabold  font-mono">Sponsors</h2>
-      <div class="flex flex-col flex-1 gap-0.5 mt-2 absolute left-0 w-full top-[-8px]">
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-        <div class="border-t border-dotted w-full border-base-300/50"></div>
-      </div>
-    </div>    
-    <div class="mt-6 font-mono font-bold text-xl">If you are interested in sponsoring the project, please contact us at <span class="bg-primary p-2 rounded">team@openscience.network</span></div>
+    <p>We have ambitious plans. Foster a new wave of scientific discussions online. Help fight misinformation offering actionable, interoperable bit of knowledge accessible to scientists and users.</p>
+    <p>We want to make this free, open source and available to everyone, carrying the same vision of how science must be.</p>
+    <p>Drop us a line at <span class="font-medium underline">team@openscience.network</span> to get in touch.</p>
+  </div>
+</div>
+
+</section>
 </div>
