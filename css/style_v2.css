@@ -7175,6 +7175,10 @@ details.collapse summary::-webkit-details-marker {
   top: 0px;
 }
 
+.bottom-8 {
+  bottom: 2rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -7446,6 +7450,10 @@ details.collapse summary::-webkit-details-marker {
 
 .h-\[3rem\] {
   height: 3rem;
+}
+
+.h-\[300px\] {
+  height: 300px;
 }
 
 .max-h-\[520px\] {
