@@ -2699,7 +2699,7 @@ html {
   --tw-drop-shadow:  ;
 }
 
-.backdrop-filter {
+.backdrop-blur-sm, .backdrop-filter {
   --tw-backdrop-blur:  ;
   --tw-backdrop-brightness:  ;
   --tw-backdrop-contrast:  ;
@@ -7406,6 +7406,10 @@ details.collapse summary::-webkit-details-marker {
   display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+}
+
 .table {
   display: table;
 }
@@ -7506,6 +7510,10 @@ details.collapse summary::-webkit-details-marker {
   width: 90rem;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .w-full {
   width: 100%;
 }
@@ -7548,6 +7556,10 @@ details.collapse summary::-webkit-details-marker {
 
 .max-w-screen-xl {
   max-width: 1280px;
+}
+
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .flex-1 {
@@ -7926,6 +7938,10 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-white\/30 {
+  background-color: rgb(255 255 255 / 0.3);
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -8005,6 +8021,10 @@ details.collapse summary::-webkit-details-marker {
 
 .p-0 {
   padding: 0px;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-4 {
@@ -8163,6 +8183,11 @@ details.collapse summary::-webkit-details-marker {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -8254,6 +8279,11 @@ details.collapse summary::-webkit-details-marker {
 .text-neutral-content {
   --tw-text-opacity: 1;
   color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));
+}
+
+.text-success {
+  --tw-text-opacity: 1;
+  color: var(--fallback-su,oklch(var(--su)/var(--tw-text-opacity)));
 }
 
 .text-white {
@@ -8354,6 +8384,12 @@ details.collapse summary::-webkit-details-marker {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.backdrop-blur-sm {
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
 .backdrop-filter {
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -8385,12 +8421,20 @@ details.collapse summary::-webkit-details-marker {
   transition-duration: 1000ms;
 }
 
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 .duration-500 {
   transition-duration: 500ms;
 }
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 .\[gh\:pidusage\] {
@@ -8548,12 +8592,32 @@ details.collapse summary::-webkit-details-marker {
   overflow: hidden;
 }
 
+.hover\:border-base-300:hover {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-border-opacity)));
+}
+
+.hover\:border-white:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.hover\:bg-base-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-bg-opacity)));
+}
+
 .hover\:bg-base-content\/5:hover {
   background-color: var(--fallback-bc,oklch(var(--bc)/0.05));
 }
 
 .hover\:bg-info\/20:hover {
   background-color: var(--fallback-in,oklch(var(--in)/0.2));
+}
+
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:text-white:hover {
@@ -8692,3 +8756,4 @@ details.collapse summary::-webkit-details-marker {
     max-width: 1280px;
   }
 }
+
