@@ -5,8 +5,9 @@ eleventyNavigation:
   key: Home
   order: 1
 ---
+
 <div class="min-h-screen flex flex-col justify-start !text-base-content aurora">
-<div class="aurora-overlay z-10"></div>
+<div class="z-10"></div>
 <section class="max-w-screen-xl px-2 md:px-0 w-full z-50 mx-auto">
   <div class="max-w-[600px] mx-auto">
     <h1 class="mt-32 text-xl text-center text-base-content font-bold">Open Science Network</h1>
@@ -14,17 +15,17 @@ eleventyNavigation:
       <svg class="w-6 h-6 text-success" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5.8 11.3L2 22l10.7-3.79M4 3h.01M22 8h.01M15 2h.01M22 20h.01M22 2l-2.24.75a2.9 2.9 0 0 0-1.96 3.12v0c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10m8 3l-.82-.33c-.86-.34-1.82.2-1.98 1.11v0c-.11.7-.72 1.22-1.43 1.22H17M11 2l.33.82c.34.86-.2 1.82-1.11 1.98v0C9.52 4.9 9 5.52 9 6.23V7"/><path d="M11 13c1.93 1.93 2.83 4.17 2 5c-.83.83-3.07-.07-5-2c-1.93-1.93-2.83-4.17-2-5c.83-.83 3.07.07 5 2"/></g></svg>
       <span class="text-base font-medium">Read our announcement post</span>
     </a> #}
-    <ul class="menu bg-base-100 w-full rounded border-base-content/50 border mt-10 menu-md">
-      <li><a href="https://bonfirenetworks.org/posts/openscience_network/" target="blank">Read our announcement post</a></li>
-      <li><a href="https://indieweb.social/@bonfire/112003756663690626" target="blank">Read the discussion on the Fediverse</a></li>
+    <ul class="menu menu-horizontal w-full mt-6 place-content-center menu-md">
+      <li><a href="https://bonfirenetworks.org/posts/openscience_network/" target="blank">Announcement Post</a></li>
+      <li><a href="https://indieweb.social/@bonfire/112003756663690626" target="blank">Fediverse Thread</a></li>
       {# <li><a href="/blog">Read our Blog</a></li> #}
-      <li><a href="mailto:team@openscience.network">Contact us @ team@openscience.network</a></li>
+      <li><a href="mailto:team@openscience.network">Contact us</a></li>
     </ul>
   </div>
   <div class="mt-12 max-w-[600px] mx-auto">
     
     {# Using Alpine Given an array of words I want the text to programmatically switch them within a <span> after 4 seconds #}
-    <h2 class="text-4xl font-semibold" style="font-size: 2.10rem;">Science <span x-data="{ words: ['produced', 'shared', 'discussed', 'reviewed']}" x-typewriter.cursor.2000ms="words" class="relative z-50 adj-cursor"></span> on the open web</h2>  
+    <h2 class="text-4xl font-semibold" style="font-size: 2.10rem;">Science <span x-data="{ words: ['produced', 'shared', 'discussed', 'reviewed']}" x-typewriter.cursor.2000ms="words" class="relative z-50"></span> on the open web</h2>  
   </div>
   <div class="max-w-[600px] mx-auto">
     {# Using Alpine Given an array of words I want the text to programmatically switch them within a <span> after 4 seconds #}
@@ -32,29 +33,28 @@ eleventyNavigation:
   
     <div class="prose prose-lg mt-8">
       {# <h4>What it’s all about</h4> #}
-      <p>The Open Science Network is building open and federated digital spaces to push the boundaries of open science and scholarly communication.</p>
-      <p>In an era marked by misinformation, mass surveillance and political propaganda, it is crucial to liberate science from corporate monopolies. Scientists, researchers, academics and their affiliated organisations must have control over the tools and medium they use to publish, review, share, study and discuss their work.</p>
-      <p>We are actively addressing these challenges by crafting open digital spaces tailored to meet the most pressing needs of open science communities.</p>
-      
+      <p>The current academic publishing system faces critical challenges, including restricted access, high costs, lack of transparency in peer review processes, and reliance on closed, proprietary, and outdated technologies.</p>
+      <p>On the one hand, akin to the large internet platforms, multinational monopolistic publishing corporations use surveillance technologies to exploit researchers’ user data. On the other hand, the huge sums these corporations are extracting from scholarly institutions for the privilege of publishing and/or accessing knowledge means that researchers experience a dearth of resources and infrastructure for collecting, archiving and making digital research data accessible. </p>
+      <p>This perpetuates a system where knowledge is inaccessible, hindering scientific progress, collaboration and dissemination.</p>
+      <p>The Open Science Network tackles these challenges by providing a decentralised, open-source digital space dedicated to scientific collaboration, knowledge dissemination, peer-review and production.</p>
       <h4>Features</h4>
-
       <p>The Open Science digital space is being developed using <a href="https://bonfirenetworks.org" target="blank" class="link">Bonfire</a> - a modular and open source framework to build federated digital spaces. Some of the features include:</p>
     </div>
   </div>
   <div class="max-w-screen-lg mx-auto grid px-2 md:px-0 grid-cols-1 md:grid-cols-2 my-16 gap-4">
-    <div class="border-base-content rounded relative p-4 border-base-200 border bg-base-100 h-[300px] flex items-center place-content-center flex-col">
+    <div class="border-base-content/20 rounded relative p-4 border-base-200 border bg-base-100 h-[260px] flex items-center place-content-center flex-col">
       <img src="/img/signup.png" class="w-[220px] -mt-6 mx-auto" />
       <span class="absolute left-0 right-0 bottom-8 text-center font-bold">Sign in with ORCID</span>
     </div>
-    <div class="border-base-content rounded relative p-4 border-base-300 border bg-base-100 h-[300px] flex items-center place-content-center flex-col">
+    <div class="border-base-content/20 rounded relative p-4 border-base-content/20 border bg-base-100 h-[260px] flex items-center place-content-center flex-col">
       <img src="/img/import.png" class="w-[340px] -mt-6 mx-auto" />
       <span class="absolute left-0 right-0 bottom-8 text-center font-bold">Automatically import publications</span>
     </div>
-    <div class="border-base-content rounded relative p-4 border-base-300 border bg-base-100 h-[300px] flex items-center place-content-center flex-col">
+    <div class="border-base-content/20 rounded relative p-4 border-base-content/20 border bg-base-100 h-[260px] flex items-center place-content-center flex-col">
       <img src="/img/draft.png" class="w-[340px] -mt-6 mx-auto" />
       <span class="absolute left-0 right-0 bottom-8 text-center font-bold">Collaboratively draft, review & publish papers</span>
     </div>
-    <div class="border-base-content rounded relative p-4 border-base-300 border bg-base-100 h-[300px] flex items-center place-content-center flex-col">
+    <div class="border-base-content/20 rounded relative p-4 border-base-content/20 border bg-base-100 h-[260px] flex items-center place-content-center flex-col">
       
       <div class="group relative max-w-7xl mx-auto -mt-6">
         <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25  transition duration-1000 "></div>
@@ -64,26 +64,26 @@ eleventyNavigation:
         </div>
       <span class="absolute left-0 right-0 bottom-8 text-center font-bold">Follow scientists & engage in discussions</span>
     </div>
-    <div class="border-base-content rounded relative p-4 border-base-300 border bg-base-100 h-[300px] flex items-center place-content-center flex-col">
+    <div class="border-base-content/20 rounded relative p-4 border-base-content/20 border bg-base-100 h-[260px] flex items-center place-content-center flex-col">
       <img src="/img/network.png" class="w-[120px] mx-auto -mt-6" />
       <span class="absolute left-0 right-0 bottom-8 text-center font-bold">Create & join federated groups</span>
     </div>
-    <div class="border-base-content rounded relative p-4 border-base-300 border bg-base-100 h-[300px] flex items-center place-content-center flex-col">
-      <img src="/img/semantic.svg" class="w-[120px] mx-auto -mt-6" />
+    <div class="border-base-content/20 rounded relative p-4 border-base-content/20 border bg-base-100 h-[260px] flex items-center place-content-center flex-col">
+      <img src="/img/semantic.svg" class="fill-white w-[120px] mx-auto -mt-6" />
       <span class="absolute left-0 right-0 bottom-8 text-center font-bold">Avoid data silos by leveraging semantic data</span>
     </div>
-    <div class="border-base-content rounded relative p-4 border-base-300 border bg-base-100 h-[300px] flex items-center place-content-center flex-col">
+    <div class="border-base-content/20 rounded relative p-4 border-base-content/20 border bg-base-100 h-[260px] flex items-center place-content-center flex-col">
       <img src="/img/fediverse.svg" class="w-[120px] mx-auto -mt-6" />
       <span class="absolute left-0 right-0 bottom-8 text-center font-bold">Participate in the fediverse, at your own terms</span>
     </div>
-    <div class="flex flex-col h-[300px] gap-4">
-      <div class="border-base-content rounded relative p-4 bg-base-100 border-base-300 border flex-1 flex items-center gap-2 rounded-lg font-bold shadow">
+    <div class="flex flex-col h-[260px] gap-4">
+      <div class="border-base-content/20 rounded relative p-4 bg-base-100 border-base-content/20 border flex-1 flex items-center gap-2 rounded-lg font-bold shadow">
         <svg class="w-10 h-10 text-base-content/70" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024"><path fill="currentColor" d="M832 64H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32m-600 72h560v208H232zm560 480H232V408h560zm0 272H232V680h560zM304 240a40 40 0 1 0 80 0a40 40 0 1 0-80 0m0 272a40 40 0 1 0 80 0a40 40 0 1 0-80 0m0 272a40 40 0 1 0 80 0a40 40 0 1 0-80 0"/></svg>
         <span>Self-host your open science digital space</span></div>
-      <div class="border-base-content rounded relative p-4 bg-base-100 border-base-300 border flex-1 flex items-center gap-2 rounded-lg font-bold shadow">
+      <div class="border-base-content/20 rounded relative p-4 bg-base-100 border-base-content/20 border flex-1 flex items-center gap-2 rounded-lg font-bold shadow">
         <svg class="w-10 h-10 text-base-content/70" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M2 6c0-1.505.78-3.08 2-4c0 .845.69 2 2 2a3 3 0 0 1 3 3c0 .386-.079.752-.212 1.091a74.515 74.515 0 0 1 2.191 1.808l-2.08 2.08a75.852 75.852 0 0 1-1.808-2.191A2.977 2.977 0 0 1 6 10c-2.21 0-4-1.79-4-4m12.152 6.848l1.341-1.341A4.446 4.446 0 0 0 17.5 12A4.5 4.5 0 0 0 22 7.5c0-.725-.188-1.401-.493-2.007L18 9l-2-2l3.507-3.507A4.446 4.446 0 0 0 17.5 3A4.5 4.5 0 0 0 13 7.5c0 .725.188 1.401.493 2.007L3 20l2 2l6.848-6.848a68.562 68.562 0 0 0 5.977 5.449l1.425 1.149l1.5-1.5l-1.149-1.425a68.562 68.562 0 0 0-5.449-5.977"/></svg>
         <span>Customise UI and features</span></div>
-      <div class="border-base-content rounded relative p-4 bg-base-100 border-base-300 border flex-1 flex items-center gap-2 rounded-lg font-bold shadow">
+      <div class="border-base-content/20 rounded relative p-4 bg-base-100 border-base-content/20 border flex-1 flex items-center gap-2 rounded-lg font-bold shadow">
         <svg class="w-10 h-10 text-base-content/70" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M2.828 4.328C5.26 1.896 9.5 1.881 11.935 4.317c.024.024.046.05.067.076c1.391-1.078 2.993-1.886 4.777-1.89a6.22 6.22 0 0 1 4.424 1.825c.559.56 1.023 1.165 1.34 1.922c.318.756.47 1.617.468 2.663c0 2.972-2.047 5.808-4.269 8.074c-2.098 2.14-4.507 3.924-5.974 5.009l-.311.23a.752.752 0 0 1-.897 0l-.312-.23c-1.466-1.085-3.875-2.869-5.973-5.009c-2.22-2.263-4.264-5.095-4.27-8.063a6.216 6.216 0 0 1 1.823-4.596m8.033 1.042c-1.846-1.834-5.124-1.823-6.969.022a4.712 4.712 0 0 0-1.382 3.52c0 2.332 1.65 4.79 3.839 7.022c1.947 1.986 4.184 3.66 5.66 4.752a78.214 78.214 0 0 0 2.159-1.645l-2.14-1.974a.752.752 0 0 1 1.02-1.106l2.295 2.118c.616-.52 1.242-1.08 1.85-1.672l-2.16-1.992a.753.753 0 0 1 1.021-1.106l2.188 2.02a18.963 18.963 0 0 0 1.528-1.877l-.585-.586l-1.651-1.652c-1.078-1.074-2.837-1.055-3.935.043c-.379.38-.76.758-1.132 1.126c-1.14 1.124-2.96 1.077-4.07-.043c-.489-.495-.98-.988-1.475-1.482a.752.752 0 0 1-.04-1.019c.234-.276.483-.576.745-.893c.928-1.12 2.023-2.442 3.234-3.576m9.725 6.77c.579-1.08.92-2.167.92-3.228c.002-.899-.128-1.552-.35-2.08c-.22-.526-.551-.974-1.017-1.44a4.71 4.71 0 0 0-3.356-1.384c-1.66.004-3.25.951-4.77 2.346c-1.18 1.084-2.233 2.353-3.188 3.506l-.351.423c.331.332.663.664.993.998a1.375 1.375 0 0 0 1.943.03c.37-.365.748-.74 1.125-1.118c1.662-1.663 4.373-1.726 6.06-.045c.56.558 1.12 1.12 1.658 1.658Z"/></svg>
         <span>Define your own code of conduct</span>
       </div>
@@ -98,7 +98,7 @@ eleventyNavigation:
     </div>
   </div>
 
-
+{# 
 <section class="my-16 max-w-screen-lg px-2 md:px-0 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-2">
     
     <div class="relative border border-base-content flex items-center place-content-center rounded ">
@@ -117,12 +117,12 @@ eleventyNavigation:
       <img class="my-10 opacity-80" src="/img/community.svg" />
       <p class="absolute w-full text-center text-base-content  font-bold bottom-4 left-0">Peer review</p>
     </div>
-    </section>
+    </section> #}
 
 <div class="max-w-[600px] mx-auto">
   <div class="prose prose-lg mt-2">
     <h4>FAQs</h4>
-    <div class="collapse mt-8 border-b border-dashed  border-base-300 rounded-none collapse-plus ">
+    <div class="collapse mt-8 border-b border-dashed  border-base-content/20 rounded-none collapse-plus ">
       <input type="radio" name="my-accordion-3" /> 
       <div class="collapse-title !px-0 font-semibold">
         What is an open science digital space?
@@ -134,7 +134,7 @@ eleventyNavigation:
         </div>
       </div>
     </div>
-    <div class="collapse border-b border-dashed  border-base-300 rounded-none collapse-plus ">
+    <div class="collapse border-b border-dashed  border-base-content/20 rounded-none collapse-plus ">
       <input type="radio" name="my-accordion-3" /> 
       <div class="collapse-title !px-0 font-semibold">
         How can I connect with other communities and researchers?
@@ -146,7 +146,7 @@ eleventyNavigation:
         </div>
       </div>
     </div>
-    <div class="collapse border-b border-dashed  border-base-300 rounded-none collapse-plus ">
+    <div class="collapse border-b border-dashed  border-base-content/20 rounded-none collapse-plus ">
       <input type="radio" name="my-accordion-3"  /> 
       <div class="collapse-title !px-0 font-semibold">
         Can I set up my own open science digital space?
@@ -158,7 +158,7 @@ eleventyNavigation:
       </div>
     </div>
 
-    <div class="collapse border-b border-dashed  border-base-300 rounded-none collapse-plus ">
+    <div class="collapse border-b border-dashed  border-base-content/20 rounded-none collapse-plus ">
       <input type="radio" name="my-accordion-3"  /> 
       <div class="collapse-title !px-0 font-semibold">
         Can I use a managed service instead of self-hosting?
@@ -170,7 +170,7 @@ eleventyNavigation:
       </div>
     </div>
 
-    <div class="collapse border-b border-dashed  border-base-300 rounded-none collapse-plus ">
+    <div class="collapse border-b border-dashed  border-base-content/20 rounded-none collapse-plus ">
       <input type="radio" name="my-accordion-3"  /> 
       <div class="collapse-title !px-0 font-semibold">
         Can I join an existing open science digital space?
@@ -182,7 +182,7 @@ eleventyNavigation:
       </div>
     </div>
     
-    <div class="collapse   border-base-300 rounded-none collapse-plus ">
+    <div class="collapse   border-base-content/20 rounded-none collapse-plus ">
       <input type="radio" name="my-accordion-3"  /> 
       <div class="collapse-title !px-0 font-semibold">
         How can I support the project?
@@ -202,7 +202,7 @@ eleventyNavigation:
 <div class="w-full mt-12 mx-auto">
     <h4 class="max-w-[600px] text-lg mb-6 font-semibold mx-auto">Network</h4>
   <div class="grid grid-cols-2 lg:grid-cols-4 max-w-screen-lg mx-auto gap-0.5">
-    <div class="border-base-content flex flex-col text-center pt-5 items-center gap-3 border p-3">
+    <div class="border-base-content/20 flex flex-col text-center pt-5 items-center gap-3 border p-3">
       <img src="/img/bjorn.jpg" class="w-10 h-10 !my-0 rounded-full" alt="Bjorn">
       <div class="flex flex-col">
         <a href="http://brembs.net/" target="blank" class="link font-medium">Björn Brembs</a>
@@ -210,7 +210,7 @@ eleventyNavigation:
       </div>
     </div>
 
-    <div class="border-base-content flex flex-col text-center pt-5 items-center gap-3 border p-3">
+    <div class="border-base-content/20 flex flex-col text-center pt-5 items-center gap-3 border p-3">
       <img src="/img/jorge.jpeg" class="w-10 h-10 !my-0 rounded-full" alt="Bjorn">
       <div class="flex flex-col">
         <a href="https://kumulonimb.us" target="blank" class="link font-medium">Jorge Saturno</a>
@@ -218,7 +218,7 @@ eleventyNavigation:
       </div>
     </div>
 
-    <div class="border-base-content flex flex-col text-center pt-5 items-center gap-3 border p-3">
+    <div class="border-base-content/20 flex flex-col text-center pt-5 items-center gap-3 border p-3">
       <img src="/img/Ulrike.jpg" class="w-10 h-10 !my-0 rounded-full" alt="Bjorn">
       <div class="flex flex-col">
         <a href="https://fediscience.org/@UlrikeHahn" target="blank" class="link font-medium">Ulrike Hahn</a>
@@ -226,7 +226,7 @@ eleventyNavigation:
       </div>
     </div>
     
-    <div class="border-base-content flex flex-col text-center pt-5 items-center gap-3 border p-3">
+    <div class="border-base-content/20 flex flex-col text-center pt-5 items-center gap-3 border p-3">
       <img src="/img/Layla.webp" class="w-10 h-10 !my-0 rounded-full" alt="Layla Michán">
       <div class="flex flex-col">
         <a href="https://sites.google.com/bioinformacion.org/lab/Home" target="blank" class="link font-medium">Layla Michán</a>
@@ -234,7 +234,7 @@ eleventyNavigation:
       </div>
     </div>
 
-    <div class="border-base-content flex flex-col text-center pt-5 items-center gap-3 border p-3">
+    <div class="border-base-content/20 flex flex-col text-center pt-5 items-center gap-3 border p-3">
       <img src="/img/elena.webp" class="w-10 h-10 !my-0 rounded-full" alt="Elena Alonso">
       <div class="flex flex-col">
         <a href="#" target="blank" class="link font-medium">Elena Alonso</a>
@@ -242,7 +242,7 @@ eleventyNavigation:
       </div>
     </div>
     
-    <div class="border-base-content flex flex-col text-center pt-5 items-center gap-3 border p-3">
+    <div class="border-base-content/20 flex flex-col text-center pt-5 items-center gap-3 border p-3">
       <img src="/img/ronen.jpeg" class="w-10 h-10 !my-0 rounded-full" alt="Bjorn">
       <div class="flex flex-col">
         <a href="https://ronentk.github.io/" target="blank" class="link font-medium">Ronen Tamari</a>
@@ -250,15 +250,47 @@ eleventyNavigation:
       </div>
     </div>
   
-    <div class="border-base-content flex flex-col text-center pt-5 items-center gap-3 border p-3">
+    <div class="border-base-content/20 flex flex-col text-center pt-5 items-center gap-3 border p-3">
       <div class="w-10 min-w-10 h-10 !my-0 rounded-full bg-base-300"></div>
       <div class="flex flex-col">
         <a href="https://meg.d8a.org" target="blank" class="link font-medium">Megan Longcor</a>
         <div class="text-sm font-light">Chief Data Scientist @ D8A Institute</div>
       </div>
     </div>
+    
+    <div class="border-base-content/20 flex flex-col text-center pt-5 items-center gap-3 border p-3">
+      <div class="w-10 min-w-10 h-10 !my-0 rounded-full bg-base-300"></div>
+      <div class="flex flex-col">
+        <a href="http://khinsen.net" target="blank" class="link font-medium">Konrad Hinsen</a>
+        <div class="text-sm font-light">Research scientist @ CNRS</div>
+      </div>
+    </div>
+    
+    <div class="border-base-content/20 flex flex-col text-center pt-5 items-center gap-3 border p-3">
+      <div class="w-10 min-w-10 h-10 !my-0 rounded-full bg-base-300"></div>
+      <div class="flex flex-col">
+        <a href="http://www.ipablosb.com" target="blank" class="link font-medium">Pablo Sanchez Bosch</a>
+        <div class="text-sm font-light">Research scientist @ Stanford University</div>
+      </div>
+    </div>
+    
+    {# <div class="border-base-content/20 flex flex-col text-center pt-5 items-center gap-3 border p-3">
+      <div class="w-10 min-w-10 h-10 !my-0 rounded-full bg-base-300"></div>
+      <div class="flex flex-col">
+        <a href="http://khinsen.net" target="blank" class="link font-medium">Manisha</a>
+        <div class="text-sm font-light">Research scientist @ CNRS</div>
+      </div>
+    </div>
+    
+    <div class="border-base-content/20 flex flex-col text-center pt-5 items-center gap-3 border p-3">
+      <div class="w-10 min-w-10 h-10 !my-0 rounded-full bg-base-300"></div>
+      <div class="flex flex-col">
+        <a href="http://www.ipablosb.com" target="blank" class="link font-medium">Jhonny</a>
+        <div class="text-sm font-light">Research scientist @ Stanford University</div>
+      </div>
+    </div> #}
 
-    <div class="border-base-content flex flex-col text-center pt-5 items-center gap-3 border p-3">
+    <div class="border-base-content/20 flex flex-col text-center pt-5 items-center gap-3 border p-3">
       <img src="/img/Nibo.png" class="w-10 h-10 !my-0 rounded-full" alt="Bjorn">
       <div class="flex flex-col">
         <a href="https://niboe.info/#" target="blank" class="link font-medium">Niboe</a>
@@ -266,7 +298,7 @@ eleventyNavigation:
       </div>
     </div>
 
-    <div class="border-base-content flex flex-col text-center pt-5 items-center gap-3 border p-3">
+    <div class="border-base-content/20 flex flex-col text-center pt-5 items-center gap-3 border p-3">
       <div class="w-10 min-w-10 h-10 !my-0 rounded-full bg-base-300"></div>
       <div class="flex flex-col">
         <a href="https://scibeh.org" target="blank" class="link font-medium">SciBeh</a>
@@ -274,7 +306,7 @@ eleventyNavigation:
       </div>
     </div>
 
-    <div class="border-base-content flex flex-col text-center pt-5 items-center gap-3 border p-3">
+    <div class="border-base-content/20 flex flex-col text-center pt-5 items-center gap-3 border p-3">
       <img src="https://bonfirenetworks.org/img/bonfire.png" class="w-10 h-10 !my-0 rounded-full" alt="Bonfire">
       <div class="flex flex-col">
         <a href="https://bonfirenetworks.org" target="blank" class="link font-medium">Bonfire Networks</a>
@@ -282,15 +314,23 @@ eleventyNavigation:
       </div>
     </div>
 
-    <div class="border-base-content flex flex-col text-center pt-5 items-center gap-3 border p-3">
+    <div class="border-base-content/20 flex flex-col text-center pt-5 items-center gap-3 border p-3">
       <img src="/img/coopcloud.png" class="w-10 h-10 !my-0 rounded-full" alt="CoopCloud">
       <div class="flex flex-col">
         <a href="https://coopcloud.tech" target="blank" class="link font-medium">Coop Cloud</a>
         <div class="text-sm font-light">Public interest infrastructure.</div>
       </div>
     </div>
+    
+    {# <div class="border-base-content/20 flex flex-col text-center pt-5 items-center gap-3 border p-3">
+      <img src="/img/coopcloud.png" class="w-10 h-10 !my-0 rounded-full" alt="CoopCloud">
+      <div class="flex flex-col">
+        <a href="https://coopcloud.tech" target="blank" class="link font-medium">Neuromatch Social</a>
+        <div class="text-sm font-light">Public interest infrastructure.</div>
+      </div>
+    </div> #}
 
-    <div class="border-base-content flex flex-col text-center pt-5 items-center gap-3 border p-3">
+    <div class="border-base-content/20 flex flex-col text-center pt-5 items-center gap-3 border p-3">
       <div class="w-10 min-w-10 h-10 !my-0 rounded-full bg-base-300"></div>
       <div class="flex flex-col">
         <a href="https://sense-nets.xyz/" target="blank" class="link font-medium">Sensemaking Network</a>

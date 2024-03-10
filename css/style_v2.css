@@ -3963,6 +3963,21 @@ html {
   grid-column-start: span 9999;
 }
 
+.tab-content {
+  grid-column-start: 1;
+  grid-column-end: span 9999;
+  grid-row-start: 2;
+  margin-top: calc(var(--tab-border) * -1);
+  display: none;
+  border-color: transparent;
+  border-width: var(--tab-border, 0);
+}
+
+:checked + .tab-content:nth-child(2),
+  .tab-active + .tab-content:nth-child(2) {
+  border-start-start-radius: 0px;
+}
+
 input.tab:checked + .tab-content,
 .tab-active + .tab-content {
   display: block;
@@ -7251,6 +7266,10 @@ details.collapse summary::-webkit-details-marker {
   grid-column: 1 / -1;
 }
 
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
 .row-span-full {
   grid-row: 1 / -1;
 }
@@ -7474,6 +7493,10 @@ details.collapse summary::-webkit-details-marker {
 
 .h-\[3rem\] {
   height: 3rem;
+}
+
+.h-\[260px\] {
+  height: 260px;
 }
 
 .max-h-\[520px\] {
@@ -7928,6 +7951,10 @@ details.collapse summary::-webkit-details-marker {
   border-color: var(--fallback-in,oklch(var(--in)/var(--tw-border-opacity)));
 }
 
+.border-base-content\/20 {
+  border-color: var(--fallback-bc,oklch(var(--bc)/0.2));
+}
+
 .\!border-opacity-40 {
   --tw-border-opacity: 0.4 !important;
 }
@@ -8024,6 +8051,10 @@ details.collapse summary::-webkit-details-marker {
   fill: none;
 }
 
+.fill-white {
+  fill: #fff;
+}
+
 .stroke-none {
   stroke: none;
 }
@@ -8051,6 +8082,14 @@ details.collapse summary::-webkit-details-marker {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .\!px-0 {
