@@ -3963,21 +3963,6 @@ html {
   grid-column-start: span 9999;
 }
 
-.tab-content {
-  grid-column-start: 1;
-  grid-column-end: span 9999;
-  grid-row-start: 2;
-  margin-top: calc(var(--tab-border) * -1);
-  display: none;
-  border-color: transparent;
-  border-width: var(--tab-border, 0);
-}
-
-:checked + .tab-content:nth-child(2),
-  .tab-active + .tab-content:nth-child(2) {
-  border-start-start-radius: 0px;
-}
-
 input.tab:checked + .tab-content,
 .tab-active + .tab-content {
   display: block;
@@ -7266,10 +7251,6 @@ details.collapse summary::-webkit-details-marker {
   grid-column: 1 / -1;
 }
 
-.col-span-1 {
-  grid-column: span 1 / span 1;
-}
-
 .row-span-full {
   grid-row: 1 / -1;
 }
@@ -7379,10 +7360,6 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 0px;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .mt-12 {
   margin-top: 3rem;
 }
@@ -7487,16 +7464,12 @@ details.collapse summary::-webkit-details-marker {
   height: 1.75rem;
 }
 
-.h-\[300px\] {
-  height: 300px;
+.h-\[260px\] {
+  height: 260px;
 }
 
 .h-\[3rem\] {
   height: 3rem;
-}
-
-.h-\[260px\] {
-  height: 260px;
 }
 
 .max-h-\[520px\] {
@@ -7928,11 +7901,6 @@ details.collapse summary::-webkit-details-marker {
   border-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-border-opacity)));
 }
 
-.border-base-300 {
-  --tw-border-opacity: 1;
-  border-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-border-opacity)));
-}
-
 .border-base-content {
   --tw-border-opacity: 1;
   border-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-border-opacity)));
@@ -7942,17 +7910,13 @@ details.collapse summary::-webkit-details-marker {
   border-color: var(--fallback-bc,oklch(var(--bc)/0.1));
 }
 
-.border-base-content\/50 {
-  border-color: var(--fallback-bc,oklch(var(--bc)/0.5));
+.border-base-content\/20 {
+  border-color: var(--fallback-bc,oklch(var(--bc)/0.2));
 }
 
 .border-info {
   --tw-border-opacity: 1;
   border-color: var(--fallback-in,oklch(var(--in)/var(--tw-border-opacity)));
-}
-
-.border-base-content\/20 {
-  border-color: var(--fallback-bc,oklch(var(--bc)/0.2));
 }
 
 .\!border-opacity-40 {
@@ -8082,14 +8046,6 @@ details.collapse summary::-webkit-details-marker {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .\!px-0 {
