@@ -1,0 +1,131 @@
+<style>
+	[data-hidden="true"] {
+		display: none;
+	}
+</style>
+
+<div class="text-md prose font-bold my-4">Leave your comment below</div>
+<section>
+	<form
+		id="comment-form"
+		class="form-control w-full gap-3"
+		action="."
+		method="post"
+	>
+		<div class="flex gap-3">
+			<label class="w-full floating-label">
+				<span>Full name</span>
+				<input
+					class="input border-none rounded-lg bg-base-200"
+					type="text"
+					name="name"
+					spellcheck="false"
+					placeholder="Full name"
+					required
+				/>
+			</label>
+			<label class="w-full floating-label">
+				<span>Email (optional)</span>
+				<input
+					class="input border-none rounded-lg bg-base-200 w-full"
+					type="email"
+					name="email"
+					spellcheck="false"
+					placeholder="Email (optional)"
+				/>
+			</label>
+		</div>
+		<label class="w-full floating-label mt-3">
+			<span>Type your comment</span>
+			<textarea
+				class="textarea border-none rounded-lg bg-base-200 w-full"
+				name="description"
+				placeholder="Type your comment"
+				rows="3"
+				required
+				minlength="7"
+			></textarea>
+		</label>
+
+		<input name="reply_to" hidden />
+
+		<button class="btn rounded-lg btn-primary w-28 mt-3" type="submit" name="submit">
+			Send
+		</button>
+	</form>
+</section>
+
+<section class="mt-4">
+	<button id="comment-list-loader" class="hover:text-primary">
+		See comments
+	</button>
+
+	<article id="comment-list-container" class="flex flex-col mt-6 gap-2">
+		<!-- NOTE: keep all template element hidden -->
+
+		<!-- comment item template -->
+		<section id="comment-list-item-[[id]]" class="card bg-base-200" hidden>
+			<div class="card-body p-3">
+				<div class="flex justify-between items-center">
+					<p>
+						<strong class="text-secondary"> [[name]] </strong>
+						<span
+							class="text-accent"
+							title="Verified user"
+							data-hidden="[[!verified]]"
+						>
+							&starf;
+						</span>
+						&#8211;
+						<em class="text-xs" title="[[created_at]]"> [[relative_time]] </em>
+					</p>
+					<button
+						class="btn btn-primary btn-xs"
+						onclick="reply_comment(this)"
+						data-comment-id="[[id]]"
+					>
+						Reply
+					</button>
+				</div>
+				<p>[[description]]</p>
+			</div>
+		</section>
+
+		<!-- reply form is copied from comment form above and will be inserted here -->
+		<!-- form reply styling can be done in comment.js > reply_comment() > reply_form -->
+
+		<!-- reply container template -->
+		<article
+			id="reply-list-container-[[id]]"
+			class="flex flex-col gap-2 pl-4 pt-4 mb-4"
+			hidden
+		>
+			<!-- reply item template -->
+			<section id="reply-list-item-[[id]]" class="card bg-base-200" hidden>
+				<div class="card-body p-3">
+					<p>
+						<strong class="text-secondary">[[name]]</strong>
+						<span
+							class="text-accent"
+							title="Verified user"
+							data-hidden="[[!verified]]"
+						>
+							&starf;
+						</span>
+						&#8211;
+						<em class="text-xs" title="[[created_at]]">[[relative_time]]</em>
+					</p>
+					<p>[[description]]</p>
+				</div>
+			</section>
+		</article>
+	</article>
+</section>
+
+<script>
+	window.SUPABASE_URL = "{{ SUPABASE_URL }}";
+	window.SUPABASE_KEY = "{{ SUPABASE_KEY }}";
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/asset/js/comment.js"></script>

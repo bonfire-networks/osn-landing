@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="{{ lang }}" data-theme="light" class="scroll-smooth scroll-pt-[5rem] bg-base-[#FDF8F2]">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="{{ description }}">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1f1f1f" media="(prefers-color-scheme: dark)">
+    <meta name="keyword" content="{{ keyword }}">
+    <meta name="author" content="{{ author }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/asset/index/favicon.ico">
+    <title>{{ title }}</title>
+    <meta property="og:title" content="{{ title }}">
+    {% if cover %}
+    <meta property="og:image" content="{{ rootURL }}{{ cover | firstCoverImage }}">
+    {% else %}
+      <meta property="og:image" content="{{ rootURL }}/asset/index/cover.webp">
+    {% endif %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" id="twitter-description" content="{{ description }}">
+    {% if cover %}
+      <meta name="twitter:image" content="{{ rootURL }}{{ cover | firstCoverImage }}">
+    {% else %}
+      <meta name="twitter:image" content="{{ rootURL }}/asset/index/cover.webp">
+    {% endif %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/css/style.css">
+    <meta name="view-transition" content="same-origin">
+    <!-- search -->
+    <link rel="modulepreload" as="script" crossorigin href="/asset/js/search.js">
+    <link rel="modulepreload" as="script" crossorigin href="/asset/js/search-global.js">
+    <!-- lazyimages -->
+    <script src="/asset/js/lazysizes.min.js"></script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","name":"{{ title }}","url":"{{ rootURL }}{{ page.url }}"}</script>
+    <script>
+      // Header scroll effect
+      document.addEventListener('DOMContentLoaded', function() {
+        const header = document.getElementById('main-header');
+        let isScrolled = false;
+        
+        function updateHeader() {
+          const scrollY = window.scrollY;
+          const shouldHaveBackground = scrollY > 10;
+          
+          if (shouldHaveBackground && !isScrolled) {
+            header.classList.add('bg-base-10/70');
+            isScrolled = true;
+          } else if (!shouldHaveBackground && isScrolled) {
+            header.classList.remove('bg-base-100/70');
+            isScrolled = false;
+          }
+        }
+        
+        // Use passive listener for better performance
+        window.addEventListener('scroll', updateHeader, { passive: true });
+        
+        // Check initial state
+        updateHeader();
+      });
+    </script>
+  </head>
+  <body class="">
+    <!-- <div class="min-h-screen w-full relative bg-base-100"> -->
+  <!-- <div
+    class="absolute inset-0 z-0"
+    style="
+      background: #ffffff;
+      background-image: 
+        radial-gradient(
+          circle at top right,
+          rgba(255, 140, 60, 0.5),
+          transparent 70%
+        )
+      ;
+      filter: blur(80px);
+      background-repeat: no-repeat;
+    "
+  ></div> -->
+  
+
+    <div class="">
+         {% include "nav/header.html" %}
+         <main class="w-full relative z-20">
+           {{ content }}
+         </main>  
+         {% include "nav/footer.html" %}
+    </div>
+
+
+
+    
+  
+  </body>
+</html>
