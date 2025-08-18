@@ -49,9 +49,11 @@
           // Control promotional banner opacity and wave effect
           if (shouldHaveBackground) {
             promoBanner.style.opacity = '1';
+            promoBanner.style.height = 'auto';
             header.classList.add('show-wave');
           } else {
             promoBanner.style.opacity = '0';
+            promoBanner.style.height= '0';
             header.classList.remove('show-wave');
           }
           
