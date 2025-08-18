@@ -36,17 +36,28 @@
     <script src="/asset/js/lazysizes.min.js"></script>
     <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","name":"{{ title }}","url":"{{ rootURL }}{{ page.url }}"}</script>
     <script>
-      // Header scroll effect
+      // Header scroll effect with promotional banner
       document.addEventListener('DOMContentLoaded', function() {
         const header = document.getElementById('main-header');
+        const promoBanner = document.getElementById('promo-banner');
         let isScrolled = false;
         
         function updateHeader() {
           const scrollY = window.scrollY;
           const shouldHaveBackground = scrollY > 10;
           
+          // Control promotional banner opacity and wave effect
+          if (shouldHaveBackground) {
+            promoBanner.style.opacity = '1';
+            header.classList.add('show-wave');
+          } else {
+            promoBanner.style.opacity = '0';
+            header.classList.remove('show-wave');
+          }
+          
+          // Control header background (existing functionality)
           if (shouldHaveBackground && !isScrolled) {
-            header.classList.add('bg-base-10/70');
+            header.classList.add('bg-base-100/70');
             isScrolled = true;
           } else if (!shouldHaveBackground && isScrolled) {
             header.classList.remove('bg-base-100/70');
