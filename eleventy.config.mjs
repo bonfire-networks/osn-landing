@@ -44,6 +44,8 @@ export default function (eleventyConfig) {
   const passthroughCopies = ["src/robots.txt", "src/asset/", "src/CNAME"];
   passthroughCopies.forEach((path) => eleventyConfig.addPassthroughCopy(path));
 
+  eleventyConfig.addPassthroughCopy("img");
+
   // Custom collection
   const collectionConfigs = [
     { name: "posts", glob: "src/blog/**/*.md" },

@@ -1,0 +1,77 @@
+---
+layout: main/base.html
+templateClass: tmpl-post
+---
+
+
+<div class="max-w-screen-md px-6 mx-auto mt-0 mb-12 lg:px-0">
+  <div class="py-8 pb-8 mx-auto">
+    <div class=""> 
+       
+     {# <div class="items-center justify-center mb-6 place-content-center flex gap-4">
+      {%- for tag in tags | filterTagList -%}
+      {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+        <a href="{{ tagUrl | url }}">
+        <span class="badge capitalize badge-lg badge-outline">
+          {{ tag }}
+        </span>
+        </a>
+      {%- endfor %}
+      </div> #}
+
+      <h1 style="line-height: 50px;" class="z-10 col-span-2 text-4xl font-bold text-center">{{title}}</h1>
+
+      {% if header_html %}
+        {{ header_html | safe }}
+      {% else %}
+        <img src="{{image}}" alt="post image" class="w-full max-h-[520px] mt-6 rounded-box object-fit object-cover" />
+      {% endif %} 
+        
+    </div>
+  </div>
+
+    {% if canonicalUrl %}
+    <div role="alert" class="alert alert-info">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-6 w-6 shrink-0 stroke-current">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <span>This article was originally published 
+      <a class="link font-bold" href="{{ canonicalUrl }}" target="_blank" rel="noopener">
+        on the fediverse at  {{ canonicalUrl | replace('https://', '') | replace('http://', '') | split('/') | first }}
+      </a></span>
+      </div>
+    {% endif %}
+
+  <article class="max-w-screen-md mx-auto mt-12 prose prose-xl">
+    {{ content | safe }}
+    
+  </article>
+
+     {# <div class="mt-10 mb-8 text-sm text-base text-base-content/80">
+        <span>Published {{ date | readableDate }}</span>
+      </div> #}
+     
+     {% if canonicalUrl %}
+    <div role="alert" class="alert alert-info">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-6 w-6 shrink-0 stroke-current">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <span>You can comment and discuss this article 
+        <a class="link font-bold" href="{{ canonicalUrl }}" target="_blank" rel="noopener">
+          on the fediverse
+        </a></span>
+      </div>
+    {% endif %}
+    
+</div>
+
+  
+{# {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+{%- if nextPost or previousPost %}
+<hr>
+<ul>
+  {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
+  {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
+</ul>
+{%- endif %} #}
