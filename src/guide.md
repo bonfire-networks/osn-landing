@@ -7,54 +7,7 @@ description: Reclaim scientific discourse with federated digital spaces where re
 
 <div class="prose mx-auto my-16 max-w-3xl">
 
-# Open Science Network Configuration Guide
-
-This guide covers the specific configuration and features for deploying the Bonfire Open Science Network flavour. 
-Read it alongside the [official Bonfire deployment guide](https://docs.bonfirenetworks.org/deploy.html).
-
-## Prerequisites
-
-- Everything needed from the [Bonfire deployment guide](https://docs.bonfirenetworks.org/deploy.html)
-- ORCID application credentials
-- Zenodo application credentials
-
-## Environment Configuration
-
-### Required OSN Environment Variables
-
-Add these variables to your `.env` file:
-
-```bash
-# ORCID Integration (Required)
-ORCID_CLIENT_ID=your_orcid_client_id
-ORCID_CLIENT_SECRET=your_orcid_client_secret
-
-# Zenodo Integration (Optional - for archiving discussions)
-ZENODO_ENV=sandbox  # Use 'production' for live deployment
-ZENODO_CLIENT_ID=your_zenodo_client_id
-ZENODO_CLIENT_SECRET=your_zenodo_client_secret
-```
-
-### ORCID Application Setup
-
-1. **Register your application** at [ORCID Developer Tools](https://orcid.org/developer-tools)
-2. **Configure redirect URIs** to whitelist your instance:
-   ```
-   https://your-domain.org/settings/orcid/callback
-   ```
-3. **Copy credentials** to your `.env` file
-4. **Set application permissions** to read public information and publication lists
-
-### Zenodo Application Setup (Optional)
-
-1. **Create application** at [Zenodo Developers](https://zenodo.org/account/settings/applications/) (or [Sandbox](https://sandbox.zenodo.org/account/settings/applications/) for testing)
-2. **Configure redirect URI**:
-   ```
-   https://your-domain.org/settings/zenodo/callback
-   ```
-3. **Copy credentials** to your `.env` file
-
----
+# Open Science Network User Guide
 
 ## Open Science Network Features
 
@@ -69,7 +22,7 @@ ZENODO_CLIENT_SECRET=your_zenodo_client_secret
 - Publications automatically imported from ORCID record
 - Alternatively, users can link their ORCID account in the edit profile page after login
 
-**Requirements:** `ORCID_CLIENT_ID` and `ORCID_CLIENT_SECRET` configured
+**Requirements:** [ORCID API configuration](/setup)
 
 ### 2. Archive Discussions on Zenodo
 
@@ -97,7 +50,7 @@ ZENODO_CLIENT_SECRET=your_zenodo_client_secret
 - Fill in the required fields in the modal to archive either the full discussion or only the main post, including other participants as co-authors
 - Creates DOIs for preserved conversations
 
-**Requirements:** `ZENODO_CLIENT_ID` and `ZENODO_CLIENT_SECRET` configured
+**Requirements:** [Zenodo API configuration](/setup)
 
 ### 3. Profile Widgets Configuration
 
@@ -145,8 +98,5 @@ Navigate to your settings and click the *Feed presets* link. Add the "Research" 
 
 ### Support Resources
 - [Bonfire Community Chat](https://matrix.to/#/#bonfire-networks:matrix.org)
-- [ORCID Developer Documentation](https://info.orcid.org/documentation/)
-- [Zenodo API Documentation](https://developers.zenodo.org/)
-
 
 </div>
