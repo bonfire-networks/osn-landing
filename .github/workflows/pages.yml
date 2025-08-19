@@ -3,7 +3,7 @@ name: Build site with Eleventy
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -33,6 +33,6 @@ jobs:
         with:
           publish_dir: ./_site
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          cname: bonfirenetworks.org
+          # cname: bonfirenetworks.org
         env:
           API_TOKEN: ${{secrets.GITHUB_TOKEN}}
