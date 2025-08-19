@@ -50,10 +50,12 @@
           if (shouldHaveBackground) {
             promoBanner.style.opacity = '1';
             promoBanner.style.height = 'auto';
+            promoBanner.style.transform = 'translateY(0)';
             header.classList.add('show-wave');
           } else {
             promoBanner.style.opacity = '0';
             promoBanner.style.height= '0';
+            promoBanner.style.transform = 'translateY(-20px)';
             header.classList.remove('show-wave');
           }
           
