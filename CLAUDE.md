@@ -73,7 +73,7 @@ Building a pixel-perfect recreation of the Open Science Network landing page moc
 #### 1. Header/Navigation
 - Clean white background with subtle shadow
 - Logo: "Open Science Network" text-based logo (left)
-- Navigation menu: Playground, Code, Blog, Support, GitHub icon (right)
+- Navigation menu: Sandbox, Code, Blog, Support, GitHub icon (right)
 - Responsive design with mobile hamburger menu
 
 #### 2. Hero Section - "Reclaim Scientific Discourse"

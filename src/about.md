@@ -44,7 +44,7 @@ This isn't just about building better tools—it's about **building the infrastr
         <div class="text-primary">For Research Communities Ready to Deploy</div>
     </div>
     <p class="mt-3">Set up your own Open Science Network instance and join the federated research ecosystem. Complete technical documentation and community support included.</p>
-    <a href="/guide" class="btn pb-0 mb-0 btn-primary">Deploy Your Instance</a>
+    <a href="/setup" class="btn pb-0 mb-0 btn-primary">Deploy Your Instance</a>
 </div>
 
 <div class="p-4 mt-3 rounded-box border border-base-content/20">
@@ -65,7 +65,7 @@ This isn't just about building better tools—it's about **building the infrastr
 <p>
 Connect with existing research communities, explore live instances, and see federated scientific discourse in action.
 </p>
-    <a href="/playground" class="btn pb-0 mb-0 btn-primary">Explore our playground instance</a>
+    <a href="/sandbox" class="btn pb-0 mb-0 btn-primary">Explore our test instance</a>
 </div>
 
 
