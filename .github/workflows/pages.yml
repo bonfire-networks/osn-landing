@@ -1,0 +1,38 @@
+name: Build site with Eleventy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies & build
+        env:
+          API_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        run: |
+          npm ci
+          npm run build          
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./_site
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          cname: bonfirenetworks.org
+        env:
+          API_TOKEN: ${{secrets.GITHUB_TOKEN}}
