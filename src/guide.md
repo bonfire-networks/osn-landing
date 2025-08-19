@@ -1,9 +1,8 @@
 ---
 layout: main/base.html
 title: Open Science Network
-description: Reclaim scientific discourse with federated digital spaces where researchers control their conversations, data and collaborations
+description: Reclaim scientific discourse with federated digital spaces where researchers shape their own conversations, data, and collaborations, participating in the open social web on their terms.
 ---
-
 
 <div class="prose mx-auto my-16 max-w-3xl">
 
@@ -13,86 +12,81 @@ description: Reclaim scientific discourse with federated digital spaces where re
 
 ### 1. Sign In with ORCID
 
-**What it does:** Allows researchers to authenticate using their ORCID credentials, automatically importing their professional profile and publication history.
+**What it does:** Enables researchers to authenticate with ORCID, automatically importing their professional profile and publication history.
 
 **User experience:**
-- Users see "Sign in with ORCID" option on login page
-- One-click authentication through ORCID
-- Automatic profile population with verified academic identity
-- Publications automatically imported from ORCID record
-- Alternatively, users can link their ORCID account in the edit profile page after login
+- "Sign in with ORCID" option on the login page
+- One-click authentication via ORCID
+- Profile auto-populated with verified academic identity
+- Publications imported from ORCID record
+- Optionally, can also link ORCID in your profile settings after signing up
 
 **Requirements:** [ORCID API configuration](/setup)
 
 ### 2. Archive Discussions on Zenodo
 
-**What it does:** Enables integration with Zenodo for preserving valuable academic discussions as FAIR digital objects with DOIs.
+**What it does:** Integrates with Zenodo to preserve academic discussions as FAIR digital objects with DOIs.
 
 **Process:**
 1. Connect your Zenodo account during login or in user settings  
-2. Community moderators or post authors can archive discussions
-3. Discussion metadata is formatted according to FAIR principles
-4. Content is deposited to Zenodo with persistent DOI
-5. Archived discussions become citable scholarly objects and are linked within the Thread itself
+2. Moderators or post authors can archive discussions
+3. Metadata is formatted according to FAIR principles
+4. Content is deposited to Zenodo with a persistent DOI
+5. Archived discussions become citable and are linked within the thread
 6. Complete provenance chain maintained
 
-**Generated metadata:**
-- Participants and their ORCID IDs
+**Metadata includes:**
+- Participants and ORCID IDs
 - Upload type
-- Discussion timestamps and context
-- Access right
+- Timestamps and context
+- Access rights
 - Keywords
 - Licensing information
 
 **User experience:**
-- Connect your Zenodo account on login or in user settings
-- On the discussion page, click the 3-dot icon below the main post. If you are the post author, you will see the "Archive with Zenodo" button.
-- Fill in the required fields in the modal to archive either the full discussion or only the main post, including other participants as co-authors
+- Connect Zenodo account on login or in settings
+- On a discussion, click the 3-dot icon below the main post. If you are the author, you'll see "Archive with Zenodo"
+- Fill in the modal to archive the full discussion (including co-authors) or just the main post
 - Creates DOIs for preserved conversations
 
 **Requirements:** [Zenodo API configuration](/setup)
 
 ### 3. Profile Widgets Configuration
 
-**What it does:** Customizable widgets display research-specific information on user profiles.
+**What it does:** Customizable widgets display research-specific info on user profiles.
 
-Navigate to your settings and click the *Open Science* link below the extensions section. You will see a list of toggleable options that determine what appears when viewing your profile and other scientists' profiles.
+Go to your settings and click *Open Science* under extensions. Toggle which widgets appear on your profile and others'.
 
 **Available widgets:**
-- **Affiliations Widget**: Display your institutional affiliations from ORCID on your profile page
-
-- **Author Info Widget**: Display author statistics like works count, citations, and h-index from OpenAlex
-
-- **Author Topics Widget**: Display research topics associated with your publications from OpenAlex
- 
-- **Publication Types Widget**: Display a breakdown of your publications by type (articles, books, etc.) from OpenAlex
-
-- **Recent Publication Widget**: Display your most recently published work from OpenAlex
+- **Affiliations Widget**: Show institutional affiliations from ORCID
+- **Author Info Widget**: Show stats like works count, citations, h-index from OpenAlex
+- **Author Topics Widget**: Show research topics from OpenAlex
+- **Publication Types Widget**: Show breakdown by publication type from OpenAlex
+- **Recent Publication Widget**: Show your most recent work from OpenAlex
 
 ### 4. Research Feed
 
-**What it does:** Custom feed aggregating publication activities across the federated network.
+**What it does:** Custom feed aggregating publication activity across the federated network.
 
-Navigate to your settings and click the *Feed presets* link. Add the "Research" custom feed to your sidebar.
+Go to settings and click *Feed presets*. Add the "Research" feed to your sidebar.
 
 **Features:**
-- **Publication shares** with rich metadata previews
-- **Cross-institutional** research updates
-- **Repository integration** showing new datasets and papers
-- **Filtered content** focused on academic discourse
-- **Discovery tools** for finding relevant research and collaborators
-
+- Publication shares with rich metadata previews
+- Cross-institutional research updates
+- Repository integration for new datasets and papers
+- Filtered for academic discourse
+- Discovery tools for finding research and collaborators
 
 ### 5. Publication Preview
 
 **What it does:** Generates rich previews when publications are shared in posts.
 
 **Features:**
-- **Automatic metadata extraction** from DOIs and repository links
-- **Co-author identification** and tagging
-- **Citation information** display
-- **Open access link detection**
-- **Related publication suggestions**
+- Automatic metadata extraction from DOIs and repository links
+- Co-author identification and tagging
+- Citation info display
+- Open access link detection
+- Related publication suggestions
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: main/base.html
 title: Open Science Network
-description: Reclaim scientific discourse with federated digital spaces where researchers control their conversations, data and collaborations
+description: Reclaim scientific discourse with federated digital spaces where researchers shape their own conversations, data, and collaborations, participating in the open social web on their terms.
 ---
 
 <section id="hero-section" class="py-[160px] text-center relative" style="background: var(--color-primary); background-image: url(/asset/images/noise-light.png);" >
@@ -13,47 +13,47 @@ description: Reclaim scientific discourse with federated digital spaces where re
 
 ## Reclaiming scientific discourse, one conversation at a time.
 
-Open Science Network emerged from a simple but powerful observation: when scientists depend on corporate platforms for critical discourse, they become vulnerable to the whims of billionaires and shareholder profits. The collapse of "ScienceTwitter" scattered years of valuable scientific conversations across fragmented platforms, revealing how thoroughly our community had become dependent on infrastructure we neither owned nor controlled.
+Open Science Network emerged from a simple but powerful observation: when researchers rely on corporate platforms for essential communication, they risk losing control over their own work and community. The collapse of "ScienceTwitter" endangered years of valuable scientific exchange, exposing just how dependent we had become on infrastructure we neither owned nor governed.
 
-## Built by Scientists, for Scientists
+## Built for scientists, by scientists
 
-We believe scientific discourse deserves better. Open Science Network is **co-designed with researchers, scientific communities, and open science advocates** who understand that the infrastructures of scientific communication shape science itself. When platforms optimize for engagement over accuracy, they fundamentally cannot host trustworthy scientific discourse.
+We believe scientific discourse deserves better. Open Science Network is **co-designed with researchers, scientific communities, and open science advocates** who know that the tools of scientific communication shape science itself. Platforms that prioritize engagement over accuracy cannot foster trustworthy scientific exchange.
 
-Our solution is different: **federated digital spaces where researchers and their institutions maintain complete control** over their conversations, data, and collaborations. Universities can host their own instances while connecting to a global network of scientific communities. Discussions become citable FAIR objects with DOIs. Publications come alive with rich metadata and collaborative annotations.
+Our approach is different: **federated digital spaces where researchers and institutions retain full control** over their data, including conversations and networks. Universities can host their own instances while also being connected to a global network of scientific communities. Discussions can become citable FAIR objects with DOIs. Publications are enriched with metadata and collaborative annotation.
 
-## Community-Governed, Open by Design
+## Community-governed, open by design
 
-Open Science Network operates without venture capital or private funding. We're building infrastructure that **serves science instead of extracting value from it**. Every line of code is open source. Every decision involves the research community. Every feature addresses real needs identified through ongoing collaboration with scientists worldwide.
+Open Science Network is a non-profit initiative operating without venture capital or corporate funding. We’re building infrastructure that **serves science, not shareholders**. All code is open source. Every decision is made with the research community. Every feature is shaped by real needs identified through ongoing collaboration with scientists worldwide.
 
 
-## The Future of Scientific Communication
+## The future of scientific communication
 
-We envision a world where scientific conversations transcend institutional walls without sacrificing institutional sovereignty. Where valuable research insights are preserved as permanent, citable parts of the scholarly record. Where a physicist at MIT can seamlessly collaborate with a climate scientist at ETH Zurich, each using their institution's platform while connecting to the broader open social web.
+We envision a world where scientific collaboration seamlessly crosses institutional boundaries without sacrificing autonomy. Where research insights are preserved as permanent, citable parts of the scholarly record. Where a physicist at MIT can connect with a climate scientist at ETH Zurich—each using their institution’s platform, yet connected through the open social web.
 
-This isn't just about building better tools—it's about **building the infrastructure that science deserves**. Infrastructure owned by researchers, governed by communities, and designed to amplify human knowledge rather than corporate profits.
+This isn’t just about better tools—it’s about **building the infrastructure science needs**. Infrastructure owned by researchers, governed by scientific communities, and designed to advance knowledge, not corporate profit.
 
-**Join us in reclaiming scientific discourse.** The future of research communication should be in the hands of researchers themselves.
+**Join us in reclaiming scientific discourse.** The future of research communication belongs in the hands of researchers.
 
 ---
 
-## Ready to Join the Movement?
+## Ready to join the movement?
 
 <div class="p-4 rounded-box border border-base-content/20">
     <div class="p-0 m-0 text-base-content font-bold text-2xl flex items-center gap-3">
         <svg class="w-11 h-11 fill-primary" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M94.81,192,65.36,214.24a8,8,0,0,1-12.81-4.51L40.19,154.1a8,8,0,0,1,1.66-6.86l30.31-36.33C71,134.25,76.7,161.43,94.81,192Zm119.34-44.76-30.31-36.33c1.21,23.34-4.54,50.52-22.65,81.09l29.45,22.24a8,8,0,0,0,12.81-4.51l12.36-55.63A8,8,0,0,0,214.15,147.24Z" opacity="0.2"></path><path d="M152,224a8,8,0,0,1-8,8H112a8,8,0,0,1,0-16h32A8,8,0,0,1,152,224ZM128,112a12,12,0,1,0-12-12A12,12,0,0,0,128,112Zm95.62,43.83-12.36,55.63a16,16,0,0,1-25.51,9.11L158.51,200h-61L70.25,220.57a16,16,0,0,1-25.51-9.11L32.38,155.83a16.09,16.09,0,0,1,3.32-13.71l28.56-34.26a123.07,123.07,0,0,1,8.57-36.67c12.9-32.34,36-52.63,45.37-59.85a16,16,0,0,1,19.6,0c9.34,7.22,32.47,27.51,45.37,59.85a123.07,123.07,0,0,1,8.57,36.67l28.56,34.26A16.09,16.09,0,0,1,223.62,155.83ZM99.43,184h57.14c21.12-37.54,25.07-73.48,11.74-106.88C156.55,47.64,134.49,29,128,24c-6.51,5-28.57,23.64-40.33,53.12C74.36,110.52,78.31,146.46,99.43,184Zm-15,5.85Q68.28,160.5,64.83,132.16L48,152.36,60.36,208l.18-.13ZM208,152.36l-16.83-20.2q-3.42,28.28-19.56,57.69l23.85,18,.18.13Z"></path></svg>
-        <div class="text-primary">For Research Communities Ready to Deploy</div>
+        <div class="text-primary">Ready to deploy your own Open Science Network?</div>
     </div>
-    <p class="mt-3">Set up your own Open Science Network instance and join the federated research ecosystem. Complete technical documentation and community support included.</p>
+    <p class="mt-3">Set up your own Open Science Network instance and join the federated research ecosystem. Technical documentation and community support available. Perfect for institutions with their own hosting infrastructure and technical department.</p>
     <a href="/setup" class="btn pb-0 mb-0 btn-primary">Deploy Your Instance</a>
 </div>
 
 <div class="p-4 mt-3 rounded-box border border-base-content/20">
     <div class="p-0 m-0 text-base-content font-bold text-2xl flex items-center gap-3">
         <svg class="w-11 h-11 fill-primary" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M240,128l-48,40H64L16,128,64,88H192Z" opacity="0.2"></path><path d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"></path></svg>
-        <div class="text-primary">Need implementation support or custom development</div>
+        <div class="text-primary">Need support or custom development?</div>
     </div>
     <p class="mt-3">
-    Join our pilot program for white-glove setup, researcher training, and ongoing technical assistance. Perfect for institutions new to federated infrastructure.</p>
+    Join our pilot program for white-glove setup, researcher training, customisation or custom development, and ongoing technical assistance. Perfect for those new to federated infrastructure.</p>
     <a href="/start" class="btn pb-0 mb-0 btn-primary">Apply for our pilot program</a>
 </div>
 

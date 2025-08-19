@@ -1,22 +1,20 @@
 ---
 layout: main/base.html
 title: Open Science Network
-description: Reclaim scientific discourse with federated digital spaces where researchers control their conversations, data and collaborations
+description: Reclaim scientific discourse with federated digital spaces where researchers shape their own conversations, data, and collaborations, participating in the open social web on their terms.
 ---
-
 
 <div class="prose mx-auto my-16 max-w-3xl">
 
 # Open Science Network Configuration Guide
 
-This guide covers the specific configuration and features for deploying an Open Science Network instance (powered by Bonfire). 
+This guide covers how to configure and deploy your own Open Science Network instance (powered by Bonfire).
 
 ## Prerequisites
 
-- Set up an instance by following the [Bonfire deployment guide](https://docs.bonfirenetworks.org/deploy.html), configuring it with `open_science` as the flavour
+- Deploy an instance using the [Bonfire deployment guide](https://docs.bonfirenetworks.org/deploy.html), setting `open_science` as the flavour.
 
 ## Environment Configuration
-
 
 ### ORCID Application Setup
 
@@ -46,7 +44,7 @@ This guide covers the specific configuration and features for deploying an Open 
 Add these variables to your Bonfire environment or `.env` file:
 
 ```bash
-FLAVOUR=open_science # sets what Bonfire flavour to use
+FLAVOUR=open_science # sets Bonfire flavour
 
 # ORCID Integration (Required)
 # ORCID_ENV=sandbox # uncomment if using the sandbox API
@@ -66,6 +64,5 @@ ZENODO_CLIENT_SECRET=your_zenodo_client_secret
 - [Bonfire Technical Chat](https://matrix.to/#/#bonfire-tech:matrix.org)
 - [ORCID Developer Documentation](https://info.orcid.org/documentation/)
 - [Zenodo API Documentation](https://developers.zenodo.org/)
-
 
 </div>
