@@ -54,7 +54,7 @@ This isn’t just about better tools—it’s about **building the infrastructur
     </div>
     <p class="mt-3">
     Join our pilot program for white-glove setup, researcher training, customisation or custom development, and ongoing technical assistance. Perfect for those new to federated infrastructure.</p>
-    <a href="/start" class="btn pb-0 mb-0 btn-primary">Apply for our pilot program</a>
+    <a href="/pilots" class="btn pb-0 mb-0 btn-primary">Apply for our pilot program</a>
 </div>
 
 <div class="p-4 mt-3 rounded-box border border-base-content/20">
