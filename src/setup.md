@@ -15,7 +15,7 @@ This guide covers how to configure and deploy your own Open Science Network inst
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-6 w-6 shrink-0 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
     <div class="flex text-base flex-col">
         <span class="font-bold">Want professional deployment support?</span>
-        <div>Join our <a href="/pilots">pilot program</a> for complete implementation assistance and researcher training, or choose <a href="">managed hosting</a> for hands-off deployment.</div>
+        <div>Join our <a href="/pilots">pilot program</a> for complete implementation assistance and researcher training, or <a href="https://cal.com/bonfire-networks/meet" target="_blank">book a call to discuss managed hosting</a> for hands-off deployment.</div>
     </div>
 </div>
 
