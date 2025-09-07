@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ lang }}" data-theme="light" class="scroll-smooth scroll-pt-[5rem] bg-base-[#FDF8F2]">
+<html lang="{{ lang }}" data-theme="dark" class="scroll-smooth scroll-pt-[5rem] bg-base-[#FDF8F2]">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="{{ description }}">
@@ -26,7 +26,7 @@
     {% endif %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/asset/css/style.css">
     <meta name="view-transition" content="same-origin">
     <!-- search -->
@@ -96,7 +96,8 @@
   ></div> -->
   
 
-    <div class="">
+    <div class="aurora flex min-h-screen flex-col justify-start text-body undefined">
+      <div class="aurora-overlay z-10"></div>
          {% include "nav/header.html" %}
          <main class="w-full relative z-20">
            {{ content }}
