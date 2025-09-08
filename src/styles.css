@@ -26,7 +26,7 @@ h1, h2 {
 }
 
 .aurora {
-  background-image: url(/img/aurora.png);
+  background-image: url(../images/aurora.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
