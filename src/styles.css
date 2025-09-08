@@ -28,7 +28,7 @@ h1, h2 {
 .sky {
   background-image: url(../images/ttt.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .aurora {
   background-image: url(../images/aurora.png);
