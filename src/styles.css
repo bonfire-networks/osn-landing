@@ -25,6 +25,11 @@ h1, h2 {
   @apply font-serif;
 }
 
+.sky {
+  background-image: url(../images/ttt.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .aurora {
   background-image: url(../images/aurora.png);
   background-repeat: no-repeat;
