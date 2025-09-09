@@ -1,5 +1,8 @@
-## TWCARTY
-An eleventy starter project for photographers or artists to showcase their work and blog.
+## openscience.network website
+
+Run: `npx eleventy --watch --serve`
+
+Based on twcarty, an eleventy starter project for photographers or artists to showcase their work and blog.
 
 [![twcarty.netlify.app](https://img.shields.io/badge/LIVE-twcarty.netlify.app-blue?style=for-the-badge)](https://twcarty.netlify.app/)  
 [![apoxi.cam](https://img.shields.io/badge/SAMPLE-apoxi.cam-blue?style=for-the-badge)](https://apoxi.cam/)

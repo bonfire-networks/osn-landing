@@ -21,7 +21,7 @@ This guide covers how to configure and deploy your own Open Science Network inst
 
 ## Prerequisites
 
-- Deploy an instance using the [Bonfire deployment guide](https://docs.bonfirenetworks.org/deploy.html), setting `open_science` as the flavour.
+- Deploy an instance by following Bonfire's [setup](https://docs.bonfirenetworks.org/setup.html) and [deployment](https://docs.bonfirenetworks.org/deploy.html) guides, making sure to set `open_science` as the flavour.
 
 ## Environment Configuration
 
