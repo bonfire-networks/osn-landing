@@ -1,0 +1,47 @@
+
+<section class="mt-6 lg:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+  {% set postslist = collections.post %}
+  {% for post in postslist | reverse %}
+    <article class="flex flex-col gap-2">
+        <div class="flex items-center gap-4">
+            <div class="flex items-center space-x-2">
+                <span class="flex items-center gap-4 mb-2">
+                    {# <time class="text-sm text-base-content/70">{{ post.date | readableDate }}</time> #}
+                    <div class="">
+                        {%- for tag in post.data.tags -%}
+                          {% if tag != "posts" %}
+                                {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+                                <a class="relative z-10 rounded-full bg-base-content/5 px-3 py-1.5 font-medium text-sm text-base-content hover:bg-base-content/5" href="{{ tagUrl | url }}">
+                                {{ tag }}
+                                </a>
+                             {% endif %}
+                        {%- endfor %}
+                    </div>
+                </span>
+            </div>
+        </div>
+      <div class="w-full h-48 bg-blueGray-400 rounded bg-cover bg-no-repeat bg-center shadow-xl" style="background-image: url({{ post.data.image }})"></div>
+      <div class="flex-1 mt-2">
+        <h2 class="font-bold text-xl link link-hover">
+            <a href="{{ post.url | url }}">
+                {% if post.data.title %}
+                    {{ post.data.title }}
+                {% else %}
+                    Untitled
+                {% endif %}
+            </a>
+        </h2>
+        
+        
+        
+        {% if post.data.description %}
+            <p class="text-sm text-base-content/80 line-clamps-5 my-2">
+                {{ post.data.description }}
+            </p>
+        {% endif %}
+        
+        
+      </div>
+    </article>
+  {% endfor %}
+</section>
